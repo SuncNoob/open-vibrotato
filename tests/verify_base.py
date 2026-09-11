@@ -42,22 +42,22 @@ def run() -> int:
     def require(condition, message="condition failed"):
         if not condition:
             raise AssertionError(message)
-    def original_hashes():
-        hashes = json.loads((ROOT/"tests"/"original-hashes.json").read_text())
+    def source_hashes():
+        hashes = json.loads((ROOT/"tests"/"source-hashes.json").read_text())
         for rel, expected in hashes.items():
             require(hashlib.sha256((ROOT/rel).read_bytes()).hexdigest() == expected, rel)
         return hashes
-    check("renderer and build script are byte-identical to original upload", original_hashes)
+    check("source files match the current release integrity baseline", source_hashes)
     def syntax():
         for rel in ("src/engine.js", "src/weapons.js", "src/game.js", "src/ui.js"):
             subprocess.run(["node", "--check", str(ROOT/rel)], check=True, capture_output=True)
         subprocess.run([sys.executable, "build.py"], cwd=ROOT, check=True, capture_output=True)
-        html = (ROOT/"NeonSpud.html").read_text()
+        html = (ROOT/"vibrotato.html").read_text()
         for marker in ("/*__ENGINE__*/", "/*__WEAPONS__*/", "/*__GAME__*/", "/*__UI__*/", "/*__STYLE__*/"):
             require(marker not in html, marker)
         require('<script src=' not in html.lower())
         return {"bytes": len(html.encode()), "scripts": 4}
-    check("all JavaScript parses and unmodified build emits complete inline HTML", syntax)
+    check("all JavaScript parses and build emits complete inline HTML", syntax)
     if not args.skip_sim:
         subprocess.run(["node", "tests/sim_checks.js"], cwd=ROOT, check=True)
     sim = json.loads((ROOT/"tests"/"simulation-report.json").read_text())
@@ -67,7 +67,7 @@ def run() -> int:
         return int(not all(x["passed"] for x in results))
     from playwright.sync_api import sync_playwright
     SHOTS.mkdir(exist_ok=True)
-    html=(ROOT/"NeonSpud.html").read_text()
+    html=(ROOT/"vibrotato.html").read_text()
     with sync_playwright() as pw:
         browser = pw.chromium.launch(
             executable_path=os.environ.get("CHROMIUM_PATH","/usr/bin/chromium"),
@@ -393,7 +393,7 @@ def run() -> int:
             return {"errors":errors,"externalRequests":requests,"transport":"exact built HTML injected into offline browser; file:// launch not validated"}
         check("all interactive sessions remain error-free and perform zero network requests",integrity)
         mc.close();browser.close()
-    report={"version":"2.3.0","artifactSha256":hashlib.sha256((ROOT/"NeonSpud.html").read_bytes()).hexdigest(),"generatedAt":time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime()),
+    report={"version":"2.3.0","artifactSha256":hashlib.sha256((ROOT/"vibrotato.html").read_bytes()).hexdigest(),"generatedAt":time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime()),
             "transport":"exact built HTML in offline Chromium; managed environment does not verify file:// launch",
             "browser":"Chromium + software ANGLE/SwiftShader under Xvfb; not physical mobile",
             "results":results,"allPassed":all(r["passed"] for r in results),"errors":errors,"requests":requests,

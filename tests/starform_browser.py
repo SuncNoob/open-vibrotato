@@ -9,7 +9,7 @@ from playwright.sync_api import sync_playwright
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'tests/screenshots';OUT.mkdir(exist_ok=True)
-html=(ROOT/'NeonSpud.html').read_text()
+html=(ROOT/'vibrotato.html').read_text()
 results=[];errors=[];requests=[];frames=[]
 class Blocked(Exception):
     pass
@@ -134,7 +134,7 @@ with sync_playwright() as pw:
     def file_launch():
         ctx=browser.new_context(viewport={'width':960,'height':700},offline=True)
         page=ctx.new_page();page.on('pageerror',lambda e:errors.append(str(e)))
-        try:page.goto((ROOT/'NeonSpud.html').as_uri(),wait_until='load')
+        try:page.goto((ROOT/'vibrotato.html').as_uri(),wait_until='load')
         except Exception as e:
             ctx.close()
             if 'ERR_BLOCKED_BY_ADMINISTRATOR' in str(e):raise Blocked('Browser policy blocks file:// navigation; exact bundle is verified in an offline set_content context instead.')
@@ -147,6 +147,6 @@ with sync_playwright() as pw:
     check('actual local file URL starts offline and native fullscreen works',file_launch)
     browser.close()
 check('no unhandled runtime errors or external resource requests',lambda: require(not errors and not requests,str(errors)+str(requests)))
-report={'version':'2.3.1','bundleSHA256':hashlib.sha256((ROOT/'NeonSpud.html').read_bytes()).hexdigest(),'results':results,'errors':errors,'networkRequests':requests,'passed':sum(r['passed'] is True for r in results),'blocked':sum(r['passed'] is None for r in results),'total':len(results),'allPassed':all(r['passed'] is not False for r in results),'captureNote':'Production WebGL renderer. Six-blade labeled test loadouts, deterministic stationary targets, manually stepped simulation. Not an FPS benchmark or starting equipment.'}
+report={'version':'2.3.1','bundleSHA256':hashlib.sha256((ROOT/'vibrotato.html').read_bytes()).hexdigest(),'results':results,'errors':errors,'networkRequests':requests,'passed':sum(r['passed'] is True for r in results),'blocked':sum(r['passed'] is None for r in results),'total':len(results),'allPassed':all(r['passed'] is not False for r in results),'captureNote':'Production WebGL renderer. Six-blade labeled test loadouts, deterministic stationary targets, manually stepped simulation. Not an FPS benchmark or starting equipment.'}
 (ROOT/'tests/starform-browser-report.json').write_text(json.dumps(report,indent=2,ensure_ascii=False));print(json.dumps({k:report[k] for k in ['passed','blocked','total','allPassed']},indent=2))
 raise SystemExit(0 if report['allPassed'] else 1)

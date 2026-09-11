@@ -16,7 +16,7 @@ with sync_playwright() as pw:
       headless=False,args=["--no-sandbox","--ignore-gpu-blocklist","--use-gl=angle","--disable-gpu-sandbox",
           "--use-angle=swiftshader","--enable-unsafe-swiftshader","--enable-webgl","--disable-dev-shm-usage"])
     ctx=browser.new_context(viewport={"width":400,"height":320},device_scale_factor=1,offline=True)
-    p=ctx.new_page();p.set_content((ROOT/"NeonSpud.html").read_text(),wait_until="load")
+    p=ctx.new_page();p.set_content((ROOT/"vibrotato.html").read_text(),wait_until="load")
     p.evaluate("""game.suspendRendering=true;game.sound.enabled=false;
       document.getElementById('menu').classList.add('hidden');document.getElementById('overlayFX').style.display='none';
       game.renderer.quality=1;window.modelFrame=(id,gray)=>{
@@ -34,7 +34,7 @@ with sync_playwright() as pw:
     for gray in [False,True]:
         sheet=Image.new("RGB",(1600,1224),(8,17,27))
         draw=ImageDraw.Draw(sheet)
-        draw.text((32,19),"NEON SPUD / 12 种战术机体" + (" · 统一灰模" if gray else " · 实际游戏模型"),font=font(28),fill=(212,238,224))
+        draw.text((32,19),"vibrotato / 12 种战术机体" + (" · 统一灰模" if gray else " · 实际游戏模型"),font=font(28),fill=(212,238,224))
         draw.text((32,60),"相同镜头与比例。模型来自游戏几何结构，而不是角色插画。",font=font(17),fill=(137,163,170))
         for i,c in enumerate(chars):
             result=p.evaluate("([id,gray])=>modelFrame(id,gray)",[c['id'],gray])

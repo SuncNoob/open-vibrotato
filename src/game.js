@@ -1,10 +1,10 @@
-/* Neon Spud 2.3.1 STARFORM — complete playable integration.
+/* vibrotato 2.3.1 STARFORM — complete playable integration.
  * Base: uploaded Corebreak 2.3; independent blades, trails and audio ported from Crossfire 2.2.
  * engine.js and build.py are byte-identical to that upload.
  */
 'use strict';
 const BALANCE=Object.freeze({
- version:'2.3.1',title:'星阵交错',waves:20,
+ version:'2.3.1',name:'vibrotato',project:'open-vibrotato',title:'星阵交错',waves:20,
  waveSeconds:[22,22,24,24,25,35,35,38,38,40,44,44,46,48,50,52,54,56,58,60],
  player:{maxHp:100,speed:8,credits:38,pickup:3.6,crit:3,iframe:.62,dashSpeed:30,dashTime:.2,dashCooldown:2.6,empCooldown:18,empDamage:22,regen:0},
  slots:{normal:6,max:8,core:2,weaponLevel:4},armor:{denominator:100,cap:.6,negativeCap:.6,dodgeCap:.6},
@@ -92,9 +92,9 @@ class SpatialHash{
 function makeCity(){let s=49218;const r=(a,b)=>{s=(s*1664525+1013904223)>>>0;return a+s/4294967296*(b-a)};let buildings=[],props=[],marks=[];for(let i=0;i<78;i++){let side=i%4,x,z,w=r(3,6.7),d=r(3,6.5),h=r(8,26);if(side===0){x=r(-58,58);z=r(-58,-29)}if(side===1){x=r(-57,-30);z=r(-27,40)}if(side===2){x=r(30,57);z=r(-30,38)}if(side===3){x=r(-57,57);z=r(34,66);h=r(2,6)}buildings.push({x,z,w,d,h,col:i%3===0?0x101e32:0x142b3c,neon:[0x33c4c2,0xb154bb,0x6587df,0xd5b779][i%4],seed:r(0,9)})}for(let i=0;i<12;i++){let a=TAU*i/12,rr=i%3===0?17.5:19.3;props.push({x:Math.sin(a)*rr,z:Math.cos(a)*rr,rot:a,color:i%2?0x254456:0x394553,type:i%3})}for(let i=0;i<90;i++)marks.push({x:r(-20,20),z:r(-20,20),w:r(.15,.9),c:i%3?0x254b54:0x655e39});return{buildings,props,marks}}
 const CITY=makeCity();
 
-class NeonGame{
+class VibrotatoGame{
  constructor(){
-  this.renderer=new NeonRenderer(document.getElementById('world'));this.fxCanvas=document.getElementById('overlayFX');this.fx=this.fxCanvas.getContext('2d');
+  this.renderer=new VibrotatoRenderer(document.getElementById('world'));this.fxCanvas=document.getElementById('overlayFX');this.fx=this.fxCanvas.getContext('2d');
   this.sound=new AudioBus();this.grid=new SpatialHash();this.keys=new Set();this.joy={x:0,y:0};this.pointer={x:0,y:0,down:false};this.lastMove={x:0,z:-1};
   this.touch=matchMedia('(pointer:coarse)').matches;this.visualQuality=!this.touch;this.renderer.quality=this.touch?.85:1;this.renderer.bloom=BALANCE.visuals.bloom;this.weaponFX=true;
   this.rain=false;this.screenShake=true;this.damageNumbers=true;this.autoAim=true;this.state='menu';this.realTime=0;this.elapsed=0;this.frame=0;this.lastTime=performance.now();this.camYaw=.36;this.cameraDistance=26;

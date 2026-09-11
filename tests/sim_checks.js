@@ -3,10 +3,10 @@
  */
 const fs=require('fs'),vm=require('vm'),path=require('path');
 const ROOT=path.resolve(__dirname,'..');
-const engine=fs.readFileSync(path.join(ROOT,'src/engine.js'),'utf8').split('class NeonRenderer')[0];
+const engine=fs.readFileSync(path.join(ROOT,'src/engine.js'),'utf8').split('class VibrotatoRenderer')[0];
 const weapons=fs.readFileSync(path.join(ROOT,'src/weapons.js'),'utf8'),gameCode=fs.readFileSync(path.join(ROOT,'src/game.js'),'utf8');
 const stub=`
-class NeonRenderer {constructor(){this.canvas={addEventListener(){}};this.gl={getError(){return 0}};this.eye=[0,0,0];this.target=[0,0,0]}project(){return [0,0,1]}mesh(){}line(){}begin(){}render(){}}
+class VibrotatoRenderer {constructor(){this.canvas={addEventListener(){}};this.gl={getError(){return 0}};this.eye=[0,0,0];this.target=[0,0,0]}project(){return [0,0,1]}mesh(){}line(){}begin(){}render(){}}
 const UI={toast(){},showGame(){},resetJoystick(){},renderShop(){},showResult(){},closeModal(){},openUpgrade(){g.state='upgrade';this.choices=g.upgradeChoices()}};
 `;
 const dummy={classList:{contains:()=>true,add(){},remove(){},toggle(){}},style:{},getContext:()=>({}),addEventListener(){},textContent:''};
@@ -15,7 +15,7 @@ const ctx=vm.createContext({console,Math,Date,Map,Set,Array,Object,Number,String
  localStorage:{getItem:()=>null,setItem(){}},matchMedia:()=>({matches:false}),requestAnimationFrame(){},addEventListener(){},
  innerWidth:1440,innerHeight:900,devicePixelRatio:1,performance:{now:()=>0},setTimeout(){},HTMLInputElement:class{},HTMLSelectElement:class{}});
 const tests=String.raw`
-let g=new NeonGame(),results=[],assertions=0,coverage=[];
+let g=new VibrotatoGame(),results=[],assertions=0,coverage=[];
 function assert(value,message='condition failed'){assertions++;if(!value)throw Error(message)}
 function close(a,b,tol=.001){assert(Math.abs(a-b)<tol,a+' != '+b)}
 function check(name,fn){try{let detail=fn();results.push({name,passed:true,detail:detail??null});console.log('PASS '+name)}catch(e){results.push({name,passed:false,error:e.stack});console.log('FAIL '+name+' '+e.message)}}

@@ -2,7 +2,7 @@
   "version": "2.3.1",
   "results": [
     {
-      "name": "preserve original renderer, builder, weapons, items and core parameters",
+      "name": "preserve weapon, item, character and core gameplay parameters",
       "passed": true,
       "detail": null
     },

@@ -1,4 +1,10 @@
-# NEON SPUD 2.3.1 · 星阵交错
+# open-vibrotato
+
+**游戏名称：vibrotato** · 版本 2.3.1 · 星阵交错
+
+项目仓库：[SuncNoob/open-vibrotato](https://github.com/SuncNoob/open-vibrotato)
+
+游戏介绍与玩法指南：[中文](docs/GAME_GUIDE.zh.md) · [English](docs/GAME_GUIDE.en.md)
 
 这是完整游戏，不是补丁注入器或独立演示。
 **以本次上传的 `NeonSpud_Corebreak_2.3_Source.zip` 为主工程，
@@ -6,11 +12,11 @@
 
 ## 打开游戏
 
-将 `NeonSpud.html` 保存到本地，使用支持 WebGL2 且允许本地脚本的桌面浏览器打开。
+将 `vibrotato.html` 保存到本地，使用支持 WebGL2 且允许本地脚本的桌面浏览器打开。
 游戏的脚本、样式、程序化模型、音效和图标全部内置，不需要服务器、第三方运行库或 CDN。
 聊天附件预览不一定允许执行游戏，请使用浏览器打开 HTML 本身。
 
-当前自动化环境禁止 `file://` 导航；离线兼容检查使用原样构建产物载入断网浏览器。
+历史自动化环境曾禁止 `file://` 导航；历史离线兼容检查使用原样构建产物载入断网浏览器。
 实体手机、iOS Safari、系统文件管理器打开 HTML 的行为尚未实测。
 
 ## 这版重点
@@ -72,8 +78,9 @@
 python build.py
 ```
 
-输出 `NeonSpud.html`。`src/engine.js` 与 `build.py` 对两份上传工程均保持逐字节一致。
-`src/weapons.js`、`weapon-catalog.json`、`item-catalog.json` 与上传的 2.3 保持逐字节一致。
+输出 `vibrotato.html`。游戏标题、主菜单、源码类名和构建 / 测试入口已统一使用新名称。
+武器、道具与核心数值保持原样；当前源码校验基线见 `tests/source-hashes.json`。
+浏览器存储沿用原键名以兼容同一存储来源下的历史记录，原始 MIT 版权署名保留。
 
 开发时的验证依赖为 Node.js、Python、Playwright、Chromium、Pillow，以及 Linux 下的 Xvfb；
 这些依赖不随游戏运行。
@@ -93,4 +100,5 @@ xvfb-run -a python tests/verify.py
 它们不是正式开局配置、真人实战录像或帧率评测。正式开始依然只有一把武器。
 
 变更依据见 `CHANGELOG.md`，测试结果及未验证事项见 `VALIDATION.md`。
-`docs/previous-2.3/` 仅为上传版本的历史资料。
+`docs/previous-2.3/` 与 `docs/previous-2.3.1/` 保存更名前的历史资料和校验基线。
+代码优化方向见 [优化建议](docs/OPTIMIZATION.md)。

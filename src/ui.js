@@ -318,4 +318,4 @@ const UI={
  }
 };
 let game;
-try{game=new NeonGame();window.game=game;window.UI=UI;UI.init()}catch(e){console.error(e);$('fatal').classList.remove('hidden');$('fatal-details').textContent=e.stack||e.message}
+try{game=new VibrotatoGame();window.game=game;window.UI=UI;UI.init()}catch(e){console.error(e);$('fatal').classList.remove('hidden');$('fatal-details').textContent=e.stack||e.message}

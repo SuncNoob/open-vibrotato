@@ -87,7 +87,7 @@ xvfb-run -a python tests/verify.py
 
 当前 HTML SHA-256：
 
-`82859b78a6b07ee48516b258ba95945de0b6eca2e902f6815c830ff8ca09a67a`
+`00868ddb99d60be43fc413567e213e637cd76bbf0fa5c7ee12971cbd3034a6a6`
 
 本次保留文件及来源哈希见 `BUILD_MANIFEST.json`。
 历史 2.3 长流程 / 模型报告归档在 `docs/previous-2.3/`，不冒充本次重新执行的结果。

@@ -1206,7 +1206,7 @@
       "character": "scavenger",
       "seed": 2,
       "survived": true,
-      "hp": 86.47249999999957,
+      "hp": 86,
       "minHp": 78,
       "kills": 13,
       "credits": 39.44500000000001,
@@ -1249,15 +1249,15 @@
       "hp": 85,
       "minHp": 85,
       "kills": 14,
-      "credits": 72.54999999999998,
+      "credits": 72.19999999999999,
       "level": 2
     },
     {
       "character": "dancer",
       "seed": 3,
       "survived": true,
-      "hp": 85,
-      "minHp": 79,
+      "hp": 79.8,
+      "minHp": 73,
       "kills": 15,
       "credits": 74.89999999999999,
       "level": 2
@@ -1269,7 +1269,7 @@
       "hp": 85,
       "minHp": 79,
       "kills": 15,
-      "credits": 75.6,
+      "credits": 75.25,
       "level": 2
     },
     {

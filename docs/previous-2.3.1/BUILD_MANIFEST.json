@@ -1,28 +1,25 @@
 {
   "version": "2.3.1",
   "title": "星阵交错",
-  "project": "open-vibrotato",
-  "game": "vibrotato",
-  "builtAtUTC": "2026-09-11T09:09:50.220833+00:00",
+  "builtAtUTC": "2026-09-11T08:18:16.300817+00:00",
   "baseArchive": "NeonSpud_Corebreak_2.3_Source.zip",
   "referenceArchive": "NeonSpud_Crossfire_2.2_Source.zip",
-  "inheritance": "2.3 remains the main game; independent blade appearance, short arc trails and audio adapted from 2.2. Project renamed to open-vibrotato / vibrotato; gameplay and numeric values unchanged.",
+  "inheritance": "2.3 remains the main game; independent blade appearance, short arc trails and audio adapted from 2.2.",
   "preserved": [
     {
       "file": "src/engine.js",
       "unchangedFromUploaded23": true,
-      "sha256": "388dd83ba4eba0b3da1422201eb7b867748c3dd52a024df5a035abcce2d2f77c"
+      "sha256": "df8908df55ddbd337dec286a543e8c5d0d7170a104b00b080d791d8671609d81"
     },
     {
       "file": "build.py",
-      "unchangedFromUploaded23": false,
-      "note": "output filename updated to vibrotato.html only; bundling logic unchanged",
-      "sha256": "e797fbf753d3e82a6e929b46950b2640d0be02afd3f14c562f988e77107f7584"
+      "unchangedFromUploaded23": true,
+      "sha256": "a21021b3f4eb279d6f4034493a6349fc0e98db272a5a86b29a11346405ce6209"
     },
     {
       "file": "src/weapons.js",
       "unchangedFromUploaded23": true,
-      "sha256": "bf571b405ac7ff0d019688702781842ffc6f2b4516180ee1e696afc307ed9118"
+      "sha256": "d1822005be1dbc298b98cc36032ed1ee1635068b433708821810672b30f8bc2b"
     },
     {
       "file": "weapon-catalog.json",
@@ -42,9 +39,8 @@
     "src/index.html"
   ],
   "runtimeDependencies": [],
-  "htmlBytes": 235105,
-  "htmlSHA256": "82859b78a6b07ee48516b258ba95945de0b6eca2e902f6815c830ff8ca09a67a",
-  "sourceHashBaseline": "tests/source-hashes.json",
+  "htmlBytes": 235013,
+  "htmlSHA256": "00868ddb99d60be43fc413567e213e637cd76bbf0fa5c7ee12971cbd3034a6a6",
   "tests": {
     "logicGroups": 77,
     "assertions": 5986,

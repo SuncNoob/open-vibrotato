@@ -2,7 +2,7 @@
 <html lang="zh-CN"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#09121c"><meta name="color-scheme" content="dark">
-<title>NEON SPUD 2.3.1 — 星阵交错</title>
+<title>vibrotato 2.3.1 — 星阵交错</title>
 <style>/* Offline responsive interface. System fonts only. */
 :root{
  --bg:#09121d;--surface:#101e2a;--surface2:#172633;--line:#2c3e4b;--muted:#9bafb9;--text:#eaf2ee;--mint:#b4efd7;
@@ -246,13 +246,13 @@ small{font-size:12px}svg{width:100%;height:100%;display:block}a{color:var(--mint
 <button id="fullscreen-button" class="fullscreen-button" data-action="fullscreen" aria-label="进入全屏" aria-pressed="false" title="全屏 / F">
  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg><span>全屏</span>
 </button>
-<canvas id="world" aria-label="霓虹土豆 3D 游戏画面"></canvas>
+<canvas id="world" aria-label="vibrotato 3D 游戏画面"></canvas>
 <canvas id="overlayFX" aria-hidden="true"></canvas>
 <div id="menu" class="menu">
- <header class="brandbar"><div class="brand"><span class="brand-mark">N/S</span><span>NEON SPUD<span class="brand-small">独立武装 · 星阵交错</span></span></div><div class="build-label">OFFLINE BUILD <b>2.3.1</b></div></header>
+ <header class="brandbar"><div class="brand"><span class="brand-mark">v/t</span><span>vibrotato<span class="brand-small">独立武装 · 星阵交错</span></span></div><div class="build-label">OFFLINE BUILD <b>2.3.1</b></div></header>
  <div class="menu-content"><div class="menu-left">
   <div class="eyebrow"><span class="dot"></span> COREBREAK / 20 波生存构筑</div>
-  <h1>NEON<br><span>SPUD.</span></h1>
+  <h1 aria-label="vibrotato">vibro<br><span>tato</span></h1>
   <p class="hero-copy">一把武器出发。<br>让下一颗核心，改变整场战斗。</p>
   <div class="roster-head"><h2>选择你的特种土豆</h2><span>12 位角色 / 独立轮廓</span></div>
   <div id="character-grid" class="character-grid"></div>
@@ -279,7 +279,7 @@ small{font-size:12px}svg{width:100%;height:100%;display:block}a{color:var(--mint
 <div id="toast" class="toast" role="status" aria-live="polite"><span class="toast-line"></span><div><b id="toast-title"></b><p id="toast-sub"></p></div></div>
 <div id="fatal" class="fatal hidden"><span class="eyebrow">GRAPHICS / 图形启动失败</span><h2>请使用支持 WebGL2 的浏览器打开</h2><p>游戏无需联网。若通过聊天附件预览打开，请先保存 HTML，再用浏览器打开。</p><pre id="fatal-details"></pre><button class="primary" onclick="location.reload()">重新载入</button></div>
 <noscript>此游戏需要启用 JavaScript 与 WebGL2。</noscript>
-<script>/* Neon Spud - small, dependency-free WebGL2 instancing renderer. */
+<script>/* vibrotato - small, dependency-free WebGL2 instancing renderer. */
 'use strict';
 const V3={
  add:(a,b)=>[a[0]+b[0],a[1]+b[1],a[2]+b[2]],sub:(a,b)=>[a[0]-b[0],a[1]-b[1],a[2]-b[2]],
@@ -307,7 +307,7 @@ function makeGeometry(type){let p=[],n=[];function tri(a,b,c,na,nb=na,nc=na){p.p
  }
  return {p:new Float32Array(p),n:new Float32Array(n)};
 }
-class NeonRenderer{
+class VibrotatoRenderer{
  constructor(canvas){this.canvas=canvas;this.gl=canvas.getContext('webgl2',{antialias:false,alpha:false,powerPreference:'high-performance',preserveDrawingBuffer:true});if(!this.gl)throw Error('WebGL2 is unavailable. Please enable browser hardware acceleration.');let gl=this.gl;
  const vs=`#version 300 es
  precision highp float;layout(location=0) in vec3 position;layout(location=1) in vec3 normal;layout(location=2) in mat4 model;layout(location=6) in vec4 color;layout(location=7) in vec4 properties;uniform mat4 vp;out vec3 vNormal;out vec3 vWorld;out vec4 vColor;out vec4 vProps;void main(){vec4 w=model*vec4(position,1.);vWorld=w.xyz;vNormal=normalize(mat3(model)*normal);vColor=color;vProps=properties;gl_Position=vp*w;}`;
@@ -338,8 +338,8 @@ class NeonRenderer{
  groundPoint(mx,my){let f=V3.norm(V3.sub(this.target,this.eye)),r=V3.norm(V3.cross(f,[0,1,0])),u=V3.cross(r,f),t=Math.tan(this.fov/2),nx=mx/innerWidth*2-1,ny=1-my/innerHeight*2;let d=V3.add(f,V3.add(V3.mul(r,nx*t*this.width/this.height),V3.mul(u,ny*t)));let k=(.8-this.eye[1])/d[1];return [this.eye[0]+d[0]*k,this.eye[2]+d[2]*k]}
  render(time,player,hurt=0){let gl=this.gl;gl.bindFramebuffer(gl.FRAMEBUFFER,this.fb);gl.viewport(0,0,this.width,this.height);gl.clearColor(.016,.025,.054,1);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);gl.enable(gl.DEPTH_TEST);gl.disable(gl.CULL_FACE);gl.disable(gl.BLEND);gl.useProgram(this.program);gl.uniformMatrix4fv(this.loc.vp,false,this.vp);gl.uniform3fv(this.loc.eye,this.eye);gl.uniform3fv(this.loc.player,[player.x,.8,player.z]);gl.uniform1f(this.loc.time,time);this.drawCalls=0;for(let s of Object.values(this.shapes)){if(!s.instances)continue;gl.bindVertexArray(s.vao);gl.bindBuffer(gl.ARRAY_BUFFER,s.buffer);gl.bufferSubData(gl.ARRAY_BUFFER,0,s.data.subarray(0,s.instances*24));gl.drawArraysInstanced(gl.TRIANGLES,0,s.count,s.instances);this.drawCalls++}gl.disable(gl.DEPTH_TEST);gl.bindVertexArray(this.postVAO);gl.useProgram(this.blur);gl.viewport(0,0,this.bloomW,this.bloomH);gl.uniform1i(this.blurLoc.image,0);for(let i=0;i<2;i++){gl.bindFramebuffer(gl.FRAMEBUFFER,this.glows[i].fb);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,i===0?this.tex:this.glows[0].tex);gl.uniform2f(this.blurLoc.direction,i===0?1/this.bloomW:0,i===1?1/this.bloomH:0);gl.uniform1f(this.blurLoc.prefilter,i===0?1:0);gl.drawArrays(gl.TRIANGLES,0,3);this.drawCalls++}gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.viewport(0,0,this.width,this.height);gl.useProgram(this.post);gl.bindVertexArray(this.postVAO);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,this.tex);gl.uniform1i(this.postLoc.image,0);gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,this.glows[1].tex);gl.uniform1i(this.postLoc.glow,1);gl.uniform2f(this.postLoc.resolution,this.width,this.height);gl.uniform1f(this.postLoc.bloom,this.bloom);gl.uniform1f(this.postLoc.time,time);gl.uniform1f(this.postLoc.hurt,hurt);gl.drawArrays(gl.TRIANGLES,0,3);this.drawCalls++}
 }
-window.NeonRenderer=NeonRenderer;
-</script><script>/* Neon Spud 2.3 — authored data. No network or runtime dependencies. */
+window.VibrotatoRenderer=VibrotatoRenderer;
+</script><script>/* vibrotato 2.3 — authored data. No network or runtime dependencies. */
 'use strict';
 const FAMILY_DATA=[
  ['pulse','脉冲步枪','PULSE',0x68efce,8,.38,16,'远程·自动步枪','ranged',['远程','精准'],'中速单发；射程稳定，适合精准触发。',.55],
@@ -594,13 +594,13 @@ function iconSVG(family,color='currentColor'){
  };
  return `<svg viewBox="0 0 40 40" fill="none" stroke="${color}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${paths[family]||paths.pulse}"/></svg>`;
 }
-</script><script>/* Neon Spud 2.3.1 STARFORM — complete playable integration.
+</script><script>/* vibrotato 2.3.1 STARFORM — complete playable integration.
  * Base: uploaded Corebreak 2.3; independent blades, trails and audio ported from Crossfire 2.2.
  * engine.js and build.py are byte-identical to that upload.
  */
 'use strict';
 const BALANCE=Object.freeze({
- version:'2.3.1',title:'星阵交错',waves:20,
+ version:'2.3.1',name:'vibrotato',project:'open-vibrotato',title:'星阵交错',waves:20,
  waveSeconds:[22,22,24,24,25,35,35,38,38,40,44,44,46,48,50,52,54,56,58,60],
  player:{maxHp:100,speed:8,credits:38,pickup:3.6,crit:3,iframe:.62,dashSpeed:30,dashTime:.2,dashCooldown:2.6,empCooldown:18,empDamage:22,regen:0},
  slots:{normal:6,max:8,core:2,weaponLevel:4},armor:{denominator:100,cap:.6,negativeCap:.6,dodgeCap:.6},
@@ -688,9 +688,9 @@ class SpatialHash{
 function makeCity(){let s=49218;const r=(a,b)=>{s=(s*1664525+1013904223)>>>0;return a+s/4294967296*(b-a)};let buildings=[],props=[],marks=[];for(let i=0;i<78;i++){let side=i%4,x,z,w=r(3,6.7),d=r(3,6.5),h=r(8,26);if(side===0){x=r(-58,58);z=r(-58,-29)}if(side===1){x=r(-57,-30);z=r(-27,40)}if(side===2){x=r(30,57);z=r(-30,38)}if(side===3){x=r(-57,57);z=r(34,66);h=r(2,6)}buildings.push({x,z,w,d,h,col:i%3===0?0x101e32:0x142b3c,neon:[0x33c4c2,0xb154bb,0x6587df,0xd5b779][i%4],seed:r(0,9)})}for(let i=0;i<12;i++){let a=TAU*i/12,rr=i%3===0?17.5:19.3;props.push({x:Math.sin(a)*rr,z:Math.cos(a)*rr,rot:a,color:i%2?0x254456:0x394553,type:i%3})}for(let i=0;i<90;i++)marks.push({x:r(-20,20),z:r(-20,20),w:r(.15,.9),c:i%3?0x254b54:0x655e39});return{buildings,props,marks}}
 const CITY=makeCity();
 
-class NeonGame{
+class VibrotatoGame{
  constructor(){
-  this.renderer=new NeonRenderer(document.getElementById('world'));this.fxCanvas=document.getElementById('overlayFX');this.fx=this.fxCanvas.getContext('2d');
+  this.renderer=new VibrotatoRenderer(document.getElementById('world'));this.fxCanvas=document.getElementById('overlayFX');this.fx=this.fxCanvas.getContext('2d');
   this.sound=new AudioBus();this.grid=new SpatialHash();this.keys=new Set();this.joy={x:0,y:0};this.pointer={x:0,y:0,down:false};this.lastMove={x:0,z:-1};
   this.touch=matchMedia('(pointer:coarse)').matches;this.visualQuality=!this.touch;this.renderer.quality=this.touch?.85:1;this.renderer.bloom=BALANCE.visuals.bloom;this.weaponFX=true;
   this.rain=false;this.screenShake=true;this.damageNumbers=true;this.autoAim=true;this.state='menu';this.realTime=0;this.elapsed=0;this.frame=0;this.lastTime=performance.now();this.camYaw=.36;this.cameraDistance=26;
@@ -1980,6 +1980,6 @@ const UI={
  }
 };
 let game;
-try{game=new NeonGame();window.game=game;window.UI=UI;UI.init()}catch(e){console.error(e);$('fatal').classList.remove('hidden');$('fatal-details').textContent=e.stack||e.message}
+try{game=new VibrotatoGame();window.game=game;window.UI=UI;UI.init()}catch(e){console.error(e);$('fatal').classList.remove('hidden');$('fatal-details').textContent=e.stack||e.message}
 </script>
 </body></html>

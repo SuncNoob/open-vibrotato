@@ -1,4 +1,4 @@
-/* Neon Spud 2.3 — authored data. No network or runtime dependencies. */
+/* vibrotato 2.3 — authored data. No network or runtime dependencies. */
 'use strict';
 const FAMILY_DATA=[
  ['pulse','脉冲步枪','PULSE',0x68efce,8,.38,16,'远程·自动步枪','ranged',['远程','精准'],'中速单发；射程稳定，适合精准触发。',.55],

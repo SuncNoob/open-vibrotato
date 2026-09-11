@@ -1,3 +1,12 @@
+# open-vibrotato / vibrotato 更名 · 2026-09-11
+
+- 项目 / 仓库名称改为 `open-vibrotato`，游戏名称改为 `vibrotato`。
+- 更新页面标题、主菜单文字、无障碍标签、源码类名与测试引用。
+- 离线构建产物改为 `vibrotato.html`，同步文档与校验清单。
+- 原存档键和 MIT 版权署名保留；旧发布基线归档，数值与玩法未变更。
+- 新增中英文双语游戏介绍与玩法指南 `docs/GAME_GUIDE.zh.md` / `docs/GAME_GUIDE.en.md`。
+- 重新生成 `MANIFEST.sha256` 与 `BUILD_MANIFEST.json`，反映更名后的构建产物与源码哈希。
+
 # 2.3.1 · 星阵交错
 
 ## 基线与范围

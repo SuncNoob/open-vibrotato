@@ -1,4 +1,4 @@
-/* Neon Spud - small, dependency-free WebGL2 instancing renderer. */
+/* vibrotato - small, dependency-free WebGL2 instancing renderer. */
 'use strict';
 const V3={
  add:(a,b)=>[a[0]+b[0],a[1]+b[1],a[2]+b[2]],sub:(a,b)=>[a[0]-b[0],a[1]-b[1],a[2]-b[2]],
@@ -26,7 +26,7 @@ function makeGeometry(type){let p=[],n=[];function tri(a,b,c,na,nb=na,nc=na){p.p
  }
  return {p:new Float32Array(p),n:new Float32Array(n)};
 }
-class NeonRenderer{
+class VibrotatoRenderer{
  constructor(canvas){this.canvas=canvas;this.gl=canvas.getContext('webgl2',{antialias:false,alpha:false,powerPreference:'high-performance',preserveDrawingBuffer:true});if(!this.gl)throw Error('WebGL2 is unavailable. Please enable browser hardware acceleration.');let gl=this.gl;
  const vs=`#version 300 es
  precision highp float;layout(location=0) in vec3 position;layout(location=1) in vec3 normal;layout(location=2) in mat4 model;layout(location=6) in vec4 color;layout(location=7) in vec4 properties;uniform mat4 vp;out vec3 vNormal;out vec3 vWorld;out vec4 vColor;out vec4 vProps;void main(){vec4 w=model*vec4(position,1.);vWorld=w.xyz;vNormal=normalize(mat3(model)*normal);vColor=color;vProps=properties;gl_Position=vp*w;}`;
@@ -57,4 +57,4 @@ class NeonRenderer{
  groundPoint(mx,my){let f=V3.norm(V3.sub(this.target,this.eye)),r=V3.norm(V3.cross(f,[0,1,0])),u=V3.cross(r,f),t=Math.tan(this.fov/2),nx=mx/innerWidth*2-1,ny=1-my/innerHeight*2;let d=V3.add(f,V3.add(V3.mul(r,nx*t*this.width/this.height),V3.mul(u,ny*t)));let k=(.8-this.eye[1])/d[1];return [this.eye[0]+d[0]*k,this.eye[2]+d[2]*k]}
  render(time,player,hurt=0){let gl=this.gl;gl.bindFramebuffer(gl.FRAMEBUFFER,this.fb);gl.viewport(0,0,this.width,this.height);gl.clearColor(.016,.025,.054,1);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);gl.enable(gl.DEPTH_TEST);gl.disable(gl.CULL_FACE);gl.disable(gl.BLEND);gl.useProgram(this.program);gl.uniformMatrix4fv(this.loc.vp,false,this.vp);gl.uniform3fv(this.loc.eye,this.eye);gl.uniform3fv(this.loc.player,[player.x,.8,player.z]);gl.uniform1f(this.loc.time,time);this.drawCalls=0;for(let s of Object.values(this.shapes)){if(!s.instances)continue;gl.bindVertexArray(s.vao);gl.bindBuffer(gl.ARRAY_BUFFER,s.buffer);gl.bufferSubData(gl.ARRAY_BUFFER,0,s.data.subarray(0,s.instances*24));gl.drawArraysInstanced(gl.TRIANGLES,0,s.count,s.instances);this.drawCalls++}gl.disable(gl.DEPTH_TEST);gl.bindVertexArray(this.postVAO);gl.useProgram(this.blur);gl.viewport(0,0,this.bloomW,this.bloomH);gl.uniform1i(this.blurLoc.image,0);for(let i=0;i<2;i++){gl.bindFramebuffer(gl.FRAMEBUFFER,this.glows[i].fb);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,i===0?this.tex:this.glows[0].tex);gl.uniform2f(this.blurLoc.direction,i===0?1/this.bloomW:0,i===1?1/this.bloomH:0);gl.uniform1f(this.blurLoc.prefilter,i===0?1:0);gl.drawArrays(gl.TRIANGLES,0,3);this.drawCalls++}gl.bindFramebuffer(gl.FRAMEBUFFER,null);gl.viewport(0,0,this.width,this.height);gl.useProgram(this.post);gl.bindVertexArray(this.postVAO);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,this.tex);gl.uniform1i(this.postLoc.image,0);gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,this.glows[1].tex);gl.uniform1i(this.postLoc.glow,1);gl.uniform2f(this.postLoc.resolution,this.width,this.height);gl.uniform1f(this.postLoc.bloom,this.bloom);gl.uniform1f(this.postLoc.time,time);gl.uniform1f(this.postLoc.hurt,hurt);gl.drawArrays(gl.TRIANGLES,0,3);this.drawCalls++}
 }
-window.NeonRenderer=NeonRenderer;
+window.VibrotatoRenderer=VibrotatoRenderer;

@@ -7,6 +7,6 @@ html = (src / "index.html").read_text(encoding="utf-8")
 for marker, filename in {"STYLE": "style.css", "ENGINE": "engine.js", "WEAPONS": "weapons.js", "GAME": "game.js", "UI": "ui.js"}.items():
     content = (src / filename).read_text(encoding="utf-8")
     html = html.replace("/*__" + marker + "__*/", content)
-output = ROOT / "NeonSpud.html"
+output = ROOT / "vibrotato.html"
 output.write_text(html, encoding="utf-8")
 print(f"Built {output.name}: {output.stat().st_size:,} bytes")
