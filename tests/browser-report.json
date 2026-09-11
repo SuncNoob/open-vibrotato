@@ -1,0 +1,245 @@
+{
+  "version": "2.3.0",
+  "artifactSha256": "00868ddb99d60be43fc413567e213e637cd76bbf0fa5c7ee12971cbd3034a6a6",
+  "generatedAt": "2026-09-11T08:15:34Z",
+  "transport": "exact built HTML in offline Chromium; managed environment does not verify file:// launch",
+  "browser": "Chromium + software ANGLE/SwiftShader under Xvfb; not physical mobile",
+  "results": [
+    {
+      "name": "renderer and build script are byte-identical to original upload",
+      "passed": true,
+      "detail": {
+        "build.py": "a21021b3f4eb279d6f4034493a6349fc0e98db272a5a86b29a11346405ce6209",
+        "src/engine.js": "df8908df55ddbd337dec286a543e8c5d0d7170a104b00b080d791d8671609d81"
+      }
+    },
+    {
+      "name": "all JavaScript parses and unmodified build emits complete inline HTML",
+      "passed": true,
+      "detail": {
+        "bytes": 235013,
+        "scripts": 4
+      }
+    },
+    {
+      "name": "production simulation contract passed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "offline full artifact boots real WebGL2 and twelve-character menu",
+      "passed": true,
+      "detail": {
+        "gl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "version": "2.3.1"
+      }
+    },
+    {
+      "name": "real character click starts battle with exactly one initial weapon",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real animation loop, keyboard movement, dash and EMP work",
+      "passed": true,
+      "detail": {
+        "before": {
+          "x": 0,
+          "z": 0,
+          "t": 0
+        },
+        "after": {
+          "x": -0.15500066264103957,
+          "z": -0.41179460241829136,
+          "t": 0.05
+        }
+      }
+    },
+    {
+      "name": "pause freezes combat; sixteen source-expandable stats reopen and resume",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visible upgrade choices include a cost and keyboard selection applies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mixed shop renders weapons, components and orange build cores",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real lock/reroll actions protect rare offers and charge once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full-slot purchase-and-merge works through shop button",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "weapon removal has explicit cancel and confirmation with slot release",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "core condition/payoff/cost checkout installs actual production mechanism",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "third core cannot auto-overwrite; explicit chosen replacement is atomic",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collected loot installs only in shop and cannot silently impose penalties",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "searchable actual weapon catalog states attack type, scaling and cost",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dialog keyboard tab/shift-tab keeps focus inside visible actions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real renderer draws six independently damaging blades and triggered core",
+      "passed": true,
+      "detail": {
+        "damage": 1723.5463124999983,
+        "core": {
+          "count": 1,
+          "damage": 125.409375
+        },
+        "shots": [
+          2,
+          2,
+          4,
+          1,
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "name": "central health and low-health vignette render with top-left HUD hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual lethal damage produces named cause and recent hit log",
+      "passed": true,
+      "detail": "致命来源：超载改装自伤"
+    },
+    {
+      "name": "320/390 portrait and 932 landscape: no horizontal overflow, visible checkout",
+      "passed": true,
+      "detail": [
+        {
+          "viewport": [
+            320,
+            740
+          ],
+          "fonts": {
+            "reward": 17,
+            "cost": 15
+          },
+          "checkout": {
+            "x": 133.609375,
+            "y": 666,
+            "width": 158.390625,
+            "height": 48
+          }
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "fonts": {
+            "reward": 17,
+            "cost": 15
+          },
+          "checkout": {
+            "x": 161.609375,
+            "y": 770,
+            "width": 200.390625,
+            "height": 48
+          }
+        },
+        {
+          "viewport": [
+            932,
+            430
+          ],
+          "fonts": {
+            "reward": 18,
+            "cost": 15
+          },
+          "checkout": {
+            "x": 655,
+            "y": 361.5,
+            "width": 116,
+            "height": 43
+          }
+        }
+      ]
+    },
+    {
+      "name": "physical touch dispatch gives immediate analog move and reverse",
+      "passed": true,
+      "detail": {
+        "before": {
+          "x": 0.44817459176946395,
+          "z": -0.16869419437552755
+        },
+        "after": {
+          "x": 1.6798148117296268,
+          "z": -0.6322870853655461
+        }
+      }
+    },
+    {
+      "name": "second finger triggers dash on press; releasing it preserves movement",
+      "passed": true,
+      "detail": {
+        "dashCooldown": 2.4334
+      }
+    },
+    {
+      "name": "touch cancel and screen rotation clear captured direction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real finger drag scrolls mobile shop and detail; fixed checkout remains tappable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all interactive sessions remain error-free and perform zero network requests",
+      "passed": true,
+      "detail": {
+        "errors": [],
+        "externalRequests": [],
+        "transport": "exact built HTML injected into offline browser; file:// launch not validated"
+      }
+    }
+  ],
+  "allPassed": true,
+  "errors": [],
+  "requests": [],
+  "simulation": {
+    "groups": 53,
+    "assertions": 1965,
+    "allPassed": true
+  }
+}

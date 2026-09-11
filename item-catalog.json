@@ -1,0 +1,1273 @@
+{
+  "items": [
+    {
+      "id": 0,
+      "name": "纳米装甲片",
+      "stats": {
+        "maxHp": 12,
+        "armor": 2,
+        "speed": -3
+      },
+      "price": 26,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "heart"
+    },
+    {
+      "id": 1,
+      "name": "过载电池",
+      "stats": {
+        "haste": 15,
+        "maxHp": -10
+      },
+      "price": 30,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "bolt"
+    },
+    {
+      "id": 2,
+      "name": "黑市义体",
+      "stats": {
+        "damage": 18,
+        "dodge": -8
+      },
+      "price": 40,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "cross"
+    },
+    {
+      "id": 3,
+      "name": "细胞培养皿",
+      "stats": {
+        "regen": 0.6,
+        "damage": -5
+      },
+      "price": 28,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "heart"
+    },
+    {
+      "id": 4,
+      "name": "碳纤维肌束",
+      "stats": {
+        "melee": 4,
+        "ranged": -2
+      },
+      "price": 28,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "blade"
+    },
+    {
+      "id": 5,
+      "name": "光学导轨",
+      "stats": {
+        "ranged": 3,
+        "melee": -3
+      },
+      "price": 28,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "pulse"
+    },
+    {
+      "id": 6,
+      "name": "离子种子",
+      "stats": {
+        "elemental": 3,
+        "maxHp": -5
+      },
+      "price": 30,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "tesla"
+    },
+    {
+      "id": 7,
+      "name": "反应神经",
+      "stats": {
+        "dodge": 6,
+        "armor": -3
+      },
+      "price": 32,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "feather"
+    },
+    {
+      "id": 8,
+      "name": "重力靴",
+      "stats": {
+        "armor": 5,
+        "speed": -5
+      },
+      "price": 30,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "shield"
+    },
+    {
+      "id": 9,
+      "name": "轻型骨架",
+      "stats": {
+        "speed": 9,
+        "maxHp": -8
+      },
+      "price": 28,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "boot"
+    },
+    {
+      "id": 10,
+      "name": "信用嗅探器",
+      "stats": {
+        "harvest": 12,
+        "damage": -5
+      },
+      "price": 32,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "gem"
+    },
+    {
+      "id": 11,
+      "name": "拾荒磁铁",
+      "stats": {
+        "pickup": 30,
+        "range": -8
+      },
+      "price": 26,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "magnet"
+    },
+    {
+      "id": 12,
+      "name": "偏振瞄镜",
+      "stats": {
+        "crit": 7,
+        "haste": -5
+      },
+      "price": 35,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "target"
+    },
+    {
+      "id": 13,
+      "name": "加长枪管",
+      "stats": {
+        "range": 18,
+        "haste": -6
+      },
+      "price": 30,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "target"
+    },
+    {
+      "id": 14,
+      "name": "嗜血针头",
+      "stats": {
+        "lifesteal": 3,
+        "regen": -0.15
+      },
+      "price": 38,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "drop"
+    },
+    {
+      "id": 15,
+      "name": "幸运硬币",
+      "stats": {
+        "luck": 12,
+        "armor": -2
+      },
+      "price": 28,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "dice"
+    },
+    {
+      "id": 16,
+      "name": "缓释药片",
+      "stats": {
+        "regen": 0.4,
+        "maxHp": 5
+      },
+      "price": 28,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "heart"
+    },
+    {
+      "id": 17,
+      "name": "防爆凝胶",
+      "stats": {
+        "maxHp": 15,
+        "dodge": -4
+      },
+      "price": 30,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "heart"
+    },
+    {
+      "id": 18,
+      "name": "陶瓷护板",
+      "stats": {
+        "armor": 4,
+        "melee": -2
+      },
+      "price": 28,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "shield"
+    },
+    {
+      "id": 19,
+      "name": "橡胶关节",
+      "stats": {
+        "dodge": 5,
+        "speed": 3
+      },
+      "price": 32,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "feather"
+    },
+    {
+      "id": 20,
+      "name": "反冲缓冲器",
+      "stats": {
+        "ranged": 4,
+        "range": -10
+      },
+      "price": 36,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "pulse"
+    },
+    {
+      "id": 21,
+      "name": "高频握柄",
+      "stats": {
+        "melee": 5,
+        "crit": -3
+      },
+      "price": 35,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "blade"
+    },
+    {
+      "id": 22,
+      "name": "脉冲电容",
+      "stats": {
+        "elemental": 4,
+        "regen": -0.2
+      },
+      "price": 34,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "tesla"
+    },
+    {
+      "id": 23,
+      "name": "急救纤维",
+      "stats": {
+        "maxHp": 12,
+        "regen": 0.25
+      },
+      "price": 33,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "heart"
+    },
+    {
+      "id": 24,
+      "name": "破损安全芯片",
+      "stats": {
+        "damage": 12,
+        "armor": -4
+      },
+      "price": 28,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "cross"
+    },
+    {
+      "id": 25,
+      "name": "涡轮心脏",
+      "stats": {
+        "haste": 12,
+        "speed": 4,
+        "maxHp": -12
+      },
+      "price": 42,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "bolt"
+    },
+    {
+      "id": 26,
+      "name": "坚守协议",
+      "stats": {
+        "armor": 6,
+        "speed": -9
+      },
+      "price": 35,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "shield"
+    },
+    {
+      "id": 27,
+      "name": "刺客鞋垫",
+      "stats": {
+        "crit": 6,
+        "speed": 4,
+        "maxHp": -8
+      },
+      "price": 40,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "target"
+    },
+    {
+      "id": 28,
+      "name": "报废军章",
+      "stats": {
+        "damage": 8,
+        "luck": 6
+      },
+      "price": 30,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "cross"
+    },
+    {
+      "id": 29,
+      "name": "血袋",
+      "stats": {
+        "maxHp": 18,
+        "lifesteal": -2
+      },
+      "price": 30,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "heart"
+    },
+    {
+      "id": 30,
+      "name": "紫外照明",
+      "stats": {
+        "range": 12,
+        "elemental": 2
+      },
+      "price": 32,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "target"
+    },
+    {
+      "id": 31,
+      "name": "富集齿轮",
+      "stats": {
+        "harvest": 15,
+        "speed": -6
+      },
+      "price": 37,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "gem"
+    },
+    {
+      "id": 32,
+      "name": "热源追踪器",
+      "stats": {
+        "ranged": 3,
+        "crit": 4,
+        "dodge": -3
+      },
+      "price": 39,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "pulse"
+    },
+    {
+      "id": 33,
+      "name": "战术冷却液",
+      "stats": {
+        "haste": 10,
+        "elemental": -2
+      },
+      "price": 28,
+      "rarity": 0,
+      "special": null,
+      "max": 3,
+      "icon": "bolt"
+    },
+    {
+      "id": 34,
+      "name": "催化膜",
+      "stats": {
+        "elemental": 5,
+        "ranged": -3
+      },
+      "price": 36,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "tesla"
+    },
+    {
+      "id": 35,
+      "name": "双刃契约",
+      "stats": {
+        "melee": 6,
+        "armor": -4
+      },
+      "price": 34,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "blade"
+    },
+    {
+      "id": 36,
+      "name": "扩展挂点",
+      "stats": {
+        "maxHp": -15
+      },
+      "price": 85,
+      "rarity": 2,
+      "special": "slot",
+      "max": 2,
+      "icon": "heart"
+    },
+    {
+      "id": 37,
+      "name": "强化内衬",
+      "stats": {
+        "maxHp": 20,
+        "armor": 3,
+        "speed": -5
+      },
+      "price": 48,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "heart"
+    },
+    {
+      "id": 38,
+      "name": "咬合装置",
+      "stats": {
+        "lifesteal": 4,
+        "maxHp": -10
+      },
+      "price": 48,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "drop"
+    },
+    {
+      "id": 39,
+      "name": "好运缓存",
+      "stats": {
+        "luck": 22,
+        "damage": -7
+      },
+      "price": 42,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "dice"
+    },
+    {
+      "id": 40,
+      "name": "银行密钥",
+      "stats": {
+        "harvest": 8,
+        "luck": 8
+      },
+      "price": 40,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "gem"
+    },
+    {
+      "id": 41,
+      "name": "肌肉回路",
+      "stats": {
+        "melee": 4,
+        "haste": 6,
+        "range": -8
+      },
+      "price": 42,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "blade"
+    },
+    {
+      "id": 42,
+      "name": "稳定扳机",
+      "stats": {
+        "ranged": 4,
+        "crit": 3,
+        "speed": -4
+      },
+      "price": 42,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "pulse"
+    },
+    {
+      "id": 43,
+      "name": "导电外壳",
+      "stats": {
+        "elemental": 3,
+        "armor": 3
+      },
+      "price": 40,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "tesla"
+    },
+    {
+      "id": 44,
+      "name": "反射节点",
+      "stats": {
+        "dodge": 8,
+        "crit": -5
+      },
+      "price": 38,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "feather"
+    },
+    {
+      "id": 45,
+      "name": "补给背包",
+      "stats": {
+        "pickup": 35,
+        "maxHp": 10,
+        "speed": -4
+      },
+      "price": 42,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "magnet"
+    },
+    {
+      "id": 46,
+      "name": "玻璃神经",
+      "stats": {
+        "damage": 24,
+        "maxHp": -18
+      },
+      "price": 58,
+      "rarity": 3,
+      "special": null,
+      "max": 3,
+      "icon": "cross"
+    },
+    {
+      "id": 47,
+      "name": "极速执行器",
+      "stats": {
+        "haste": 22,
+        "damage": -10
+      },
+      "price": 54,
+      "rarity": 3,
+      "special": null,
+      "max": 3,
+      "icon": "bolt"
+    },
+    {
+      "id": 48,
+      "name": "铁肺",
+      "stats": {
+        "maxHp": 25,
+        "regen": 0.5,
+        "haste": -10
+      },
+      "price": 55,
+      "rarity": 3,
+      "special": null,
+      "max": 3,
+      "icon": "heart"
+    },
+    {
+      "id": 49,
+      "name": "亡命瞄准",
+      "stats": {
+        "crit": 12,
+        "armor": -7
+      },
+      "price": 55,
+      "rarity": 3,
+      "special": null,
+      "max": 3,
+      "icon": "target"
+    },
+    {
+      "id": 50,
+      "name": "废土披风",
+      "stats": {
+        "dodge": 10,
+        "luck": 10,
+        "maxHp": -12
+      },
+      "price": 52,
+      "rarity": 3,
+      "special": null,
+      "max": 3,
+      "icon": "feather"
+    },
+    {
+      "id": 51,
+      "name": "全域天线",
+      "stats": {
+        "range": 25,
+        "pickup": 25,
+        "damage": -8
+      },
+      "price": 50,
+      "rarity": 3,
+      "special": null,
+      "max": 3,
+      "icon": "target"
+    },
+    {
+      "id": 52,
+      "name": "熔融刃油",
+      "stats": {
+        "melee": 6,
+        "elemental": 3,
+        "regen": -0.3
+      },
+      "price": 52,
+      "rarity": 3,
+      "special": null,
+      "max": 3,
+      "icon": "blade"
+    },
+    {
+      "id": 53,
+      "name": "导轨增幅器",
+      "stats": {
+        "ranged": 6,
+        "haste": -10
+      },
+      "price": 45,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "pulse"
+    },
+    {
+      "id": 54,
+      "name": "地热碎片",
+      "stats": {
+        "elemental": 6,
+        "speed": -6
+      },
+      "price": 44,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "tesla"
+    },
+    {
+      "id": 55,
+      "name": "回收税章",
+      "stats": {
+        "harvest": 24,
+        "range": -15
+      },
+      "price": 48,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "gem"
+    },
+    {
+      "id": 56,
+      "name": "静脉编织",
+      "stats": {
+        "lifesteal": 5,
+        "haste": -8
+      },
+      "price": 52,
+      "rarity": 3,
+      "special": null,
+      "max": 3,
+      "icon": "drop"
+    },
+    {
+      "id": 57,
+      "name": "防护蜂窝",
+      "stats": {
+        "armor": 8,
+        "dodge": -7
+      },
+      "price": 48,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "shield"
+    },
+    {
+      "id": 58,
+      "name": "相位脚踝",
+      "stats": {
+        "speed": 14,
+        "armor": -5
+      },
+      "price": 46,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "boot"
+    },
+    {
+      "id": 59,
+      "name": "快速补丁",
+      "stats": {
+        "regen": 0.8,
+        "luck": -12
+      },
+      "price": 40,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "heart"
+    },
+    {
+      "id": 60,
+      "name": "微型反应炉",
+      "stats": {
+        "damage": 10,
+        "elemental": 2
+      },
+      "price": 42,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "cross"
+    },
+    {
+      "id": 61,
+      "name": "完整备用电池",
+      "stats": {
+        "haste": 8,
+        "maxHp": 8
+      },
+      "price": 38,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "bolt"
+    },
+    {
+      "id": 62,
+      "name": "医疗纳米群",
+      "stats": {
+        "regen": 0.7,
+        "pickup": 10
+      },
+      "price": 40,
+      "rarity": 2,
+      "special": null,
+      "max": 3,
+      "icon": "heart"
+    },
+    {
+      "id": 63,
+      "name": "磨损幸运骰",
+      "stats": {
+        "luck": 15,
+        "dodge": 3
+      },
+      "price": 38,
+      "rarity": 1,
+      "special": null,
+      "max": 3,
+      "icon": "dice"
+    }
+  ],
+  "cores": [
+    {
+      "id": "blood",
+      "name": "猩红反应堆",
+      "en": "REDLINE REACTOR",
+      "icon": "drop",
+      "style": "残血狂战",
+      "price": 145,
+      "stats": {
+        "maxHp": -10
+      },
+      "tags": [
+        "近战"
+      ],
+      "condition": "生命不高于 40%。",
+      "effect": "触发时攻速 +60%、近战武器伤害 +35%。不附赠无敌或回血。",
+      "cost": "最大生命 −10；战斗治疗效果 −40%。",
+      "tip": "高风险、高覆盖回报。护甲、闪避和吸血能提高残血窗口的容错。"
+    },
+    {
+      "id": "echo",
+      "name": "折镜刀匣",
+      "en": "PRISM SHEATH",
+      "icon": "blade",
+      "style": "交错回响",
+      "price": 165,
+      "stats": {
+        "damage": -10
+      },
+      "tags": [
+        "刀刃"
+      ],
+      "condition": "每把高频太刀的第三次实际挥击。",
+      "effect": "追加两道交叉回响，每道为该次挥击 70% 伤害；各命中最多 3 个目标。",
+      "cost": "所有伤害 −10%；全局回响触发间隔 0.28 秒。",
+      "tip": "六把刀分别计数。回响是真实的第二轮斩击，不是伤害数字装饰。"
+    },
+    {
+      "id": "quantum",
+      "name": "量子副膛",
+      "en": "QUANTUM CHAMBER",
+      "icon": "pulse",
+      "style": "高频追击",
+      "price": 150,
+      "stats": {
+        "range": -15
+      },
+      "tags": [
+        "远程",
+        "精准"
+      ],
+      "condition": "每把非工程直射武器的第三次开火。",
+      "effect": "追加两枚追踪弹，各为本次基础单发 60% 伤害；光束也能触发。",
+      "cost": "射程 −15%；全局触发间隔 0.24 秒。",
+      "tip": "不依赖不存在的弹药系统。散射按一轮计数，不按弹丸刷触发。"
+    },
+    {
+      "id": "hive",
+      "name": "蜂群协议",
+      "en": "SOVEREIGN HIVE",
+      "icon": "drone",
+      "style": "工程成军",
+      "price": 170,
+      "stats": {},
+      "tags": [
+        "工程"
+      ],
+      "condition": "同时装备至少 3 把工程标签武器。",
+      "effect": "召来 2 台额外伴机，每 0.65 秒开火；每发为工程武器平均单次伤害的 65%。",
+      "cost": "非工程直射武器伤害 −35%；伴机最多 2 台。",
+      "tip": "三件是明确门槛。伴机不占武器槽，也不递归制造新伴机。"
+    },
+    {
+      "id": "fusion",
+      "name": "三相熔炉",
+      "en": "TRIUNE FURNACE",
+      "icon": "tesla",
+      "style": "元素融合",
+      "price": 175,
+      "stats": {
+        "damage": -10,
+        "armor": -4
+      },
+      "tags": [
+        "元素"
+      ],
+      "condition": "同一敌人身上同时有火、冰、电。",
+      "effect": "消耗三种状态，引发 240% 本次单次伤害的融合爆炸（计算基数至少 18），半径 4.8。",
+      "cost": "伤害 −10%，护甲 −4；全局间隔 1.0 秒，同一敌人 3 秒。",
+      "tip": "核心本身允许三态并存。需要收集火、冰、电来源，而不只是堆元素件数。"
+    },
+    {
+      "id": "singularity",
+      "name": "奇点弹芯",
+      "en": "EVENT HORIZON",
+      "icon": "gravity",
+      "style": "聚怪连爆",
+      "price": 160,
+      "stats": {},
+      "tags": [
+        "爆裂"
+      ],
+      "condition": "主武器的一次爆炸至少命中 3 个敌人。",
+      "effect": "吸附敌人，并在 0.42 秒后追加一次 140% 伤害的塌缩爆炸。",
+      "cost": "主武器爆炸伤害 −20%；全局塌缩间隔 1.1 秒。",
+      "tip": "单体会变弱；密集波次会更强。塌缩无法再次制造塌缩。"
+    },
+    {
+      "id": "vault",
+      "name": "金库引擎",
+      "en": "VAULT ENGINE",
+      "icon": "gem",
+      "style": "储蓄火力",
+      "price": 130,
+      "stats": {},
+      "tags": [
+        "精准",
+        "重型"
+      ],
+      "condition": "每保留 60 信用点获得一档收益。",
+      "effect": "每档伤害 +4%，保留 360 信用点时达到 +24% 上限。",
+      "cost": "新生成的商品价格 +8%；已锁定价格不会改变。",
+      "tip": "购买核心本身会花钱。购买预览按扣款后的余额计算实际收益。"
+    },
+    {
+      "id": "salvage",
+      "name": "静电拾荒",
+      "en": "SCRAP CAPACITOR",
+      "icon": "magnet",
+      "style": "拾取放电",
+      "price": 135,
+      "stats": {
+        "damage": -8
+      },
+      "tags": [
+        "支援",
+        "远程"
+      ],
+      "condition": "亲自拾取 12 份素材，再用主武器命中。",
+      "effect": "释放闪电，最多连击 5 个敌人，各造成本次单次伤害的 125%。",
+      "cost": "伤害 −8%；储能最多 24，全局间隔 0.8 秒。",
+      "tip": "波末自动回收不充能。必须移动拾取，再把电荷打出去。"
+    },
+    {
+      "id": "bulwark",
+      "name": "逆相装甲",
+      "en": "INVERSE BULWARK",
+      "icon": "shield",
+      "style": "承伤反击",
+      "price": 145,
+      "stats": {
+        "dodge": -8,
+        "speed": -5
+      },
+      "tags": [
+        "近战",
+        "重型"
+      ],
+      "condition": "通过护甲实际减免累计 30 点敌人伤害。",
+      "effect": "消耗 30 储能，释放 5.2 半径反击；伤害为 35 + 护甲×1.4，上限 180，并获得 12 护盾。",
+      "cost": "闪避 −8%，移速 −5%；护盾上限 24，触发间隔 0.8 秒。",
+      "tip": "无敌帧、闪避与自伤不充能；护盾会在波次结束清空。"
+    },
+    {
+      "id": "time",
+      "name": "时间断层",
+      "en": "CHRONO RIFT",
+      "icon": "clock",
+      "style": "无伤控场",
+      "price": 150,
+      "stats": {
+        "speed": -10
+      },
+      "tags": [
+        "精准",
+        "支援"
+      ],
+      "condition": "连续 8 秒没有受到生命伤害。",
+      "effect": "敌人、敌弹与预警倒计时减速 55%，持续 3 秒；结束后重新计时。",
+      "cost": "自身移速 −10%；受伤会打断积累，不能永久维持。",
+      "tip": "减速不缩短波次计时，也不会拖慢玩家摇杆。"
+    },
+    {
+      "id": "phase",
+      "name": "相位残像",
+      "en": "PHASE REPRISE",
+      "icon": "boot",
+      "style": "穿阵斩杀",
+      "price": 155,
+      "stats": {},
+      "tags": [
+        "近战",
+        "刀刃"
+      ],
+      "condition": "一次冲刺穿过至少 3 个不同敌人的附近。",
+      "effect": "冲刺结束在路径上追加三道残像斩，每道为最强武器基础单次伤害的 110%。",
+      "cost": "冲刺冷却 +0.7 秒；同一残像斩对同一目标只命中一次。",
+      "tip": "靠近敌人 1.8 米计入穿阵；没有达成条件就不会凭空触发。"
+    },
+    {
+      "id": "parasite",
+      "name": "寄生圣约",
+      "en": "PARASITE COVENANT",
+      "icon": "heart",
+      "style": "近身猎杀",
+      "price": 150,
+      "stats": {
+        "maxHp": -25,
+        "lifesteal": 5
+      },
+      "tags": [
+        "近战",
+        "刀刃"
+      ],
+      "condition": "在距离自身 4 米以内击杀精英或首领。",
+      "effect": "立即回复 20% 最大生命，并获得 10 秒 +35% 攻速；平时提供 5% 生命偷取。",
+      "cost": "最大生命 −25，受到的生命伤害 +15%；治疗受猩红核心减效影响。",
+      "tip": "近身猎杀才有高额奖励。普通持续伤害击杀有效，核心衍生攻击的击杀不会触发此奖励。"
+    }
+  ],
+  "characters": [
+    {
+      "id": "street",
+      "name": "SP-01 街头",
+      "en": "THE ORIGINAL",
+      "role": "自由构筑",
+      "icon": "pulse",
+      "color": "#75e7c5",
+      "start": 0,
+      "stats": {},
+      "gain": "没有额外规则，任何武器都能成为答案。",
+      "cost": "标准 6 槽；没有额外天赋或负面约束。",
+      "model": "street"
+    },
+    {
+      "id": "lone",
+      "name": "独狼",
+      "en": "LONE WOLF",
+      "role": "少即是多",
+      "icon": "rail",
+      "color": "#e4cc91",
+      "start": 18,
+      "stats": {},
+      "slots": 3,
+      "gain": "所有武器伤害 +60%。",
+      "cost": "硬限制：最多 3 槽，扩展挂点无效。",
+      "model": "lone"
+    },
+    {
+      "id": "gunner",
+      "name": "机枪手",
+      "en": "BULLET CHEF",
+      "role": "高频射击",
+      "icon": "gatling",
+      "color": "#ffc576",
+      "start": 12,
+      "stats": {
+        "haste": 40,
+        "range": 20,
+        "crit": -8
+      },
+      "deny": "近战",
+      "gain": "攻速 +40%，射程 +20%。",
+      "cost": "暴击 −8%；不能装备带近战标签的武器。",
+      "model": "gunner"
+    },
+    {
+      "id": "armor",
+      "name": "装甲兵",
+      "en": "IRON POTATO",
+      "role": "护甲反击",
+      "icon": "mine",
+      "color": "#a6b9e7",
+      "start": 6,
+      "stats": {
+        "maxHp": 60,
+        "armor": 15,
+        "speed": -25,
+        "pickup": -30
+      },
+      "gain": "最大生命 +60，护甲 +15。",
+      "cost": "移速 −25%，拾取范围 −30%。",
+      "model": "armor"
+    },
+    {
+      "id": "gambler",
+      "name": "赌徒",
+      "en": "LOADED DICE",
+      "role": "幸运变奏",
+      "icon": "boomerang",
+      "color": "#e3a1e2",
+      "start": 0,
+      "stats": {
+        "luck": 50
+      },
+      "gain": "幸运 +50%，提高高稀有度报价权重。",
+      "cost": "第 2 波起，每波随机替换一把武器；保留合成等级。",
+      "model": "gambler"
+    },
+    {
+      "id": "engineer",
+      "name": "工程师",
+      "en": "HIVE MAKER",
+      "role": "机械军团",
+      "icon": "drone",
+      "color": "#86ccff",
+      "start": 90,
+      "stats": {},
+      "gain": "工程标签武器伤害 +65%。",
+      "cost": "非工程直射武器伤害 −30%。",
+      "model": "engineer"
+    },
+    {
+      "id": "vampire",
+      "name": "吸血鬼",
+      "en": "RED COVENANT",
+      "role": "贴身续航",
+      "icon": "acid",
+      "color": "#ff8095",
+      "start": 66,
+      "stats": {
+        "maxHp": -40,
+        "lifesteal": 8
+      },
+      "gain": "生命偷取 +8%。",
+      "cost": "最大生命 −40；正生命回复被锁为 0。",
+      "model": "vampire"
+    },
+    {
+      "id": "scavenger",
+      "name": "拾荒者",
+      "en": "SCRAP SAINT",
+      "role": "拾取经济",
+      "icon": "gravity",
+      "color": "#c3e17b",
+      "start": 0,
+      "stats": {
+        "harvest": 30,
+        "pickup": 100,
+        "damage": -15
+      },
+      "credits": 0,
+      "gain": "素材获取 +30%，拾取范围 +100%。",
+      "cost": "起始信用点 0；伤害 −15%。",
+      "model": "scavenger"
+    },
+    {
+      "id": "dancer",
+      "name": "刀锋舞者",
+      "en": "BLADE DANCER",
+      "role": "多刀交错",
+      "icon": "blade",
+      "color": "#edaeff",
+      "start": 66,
+      "only": "刀刃",
+      "stats": {
+        "maxHp": -15,
+        "speed": 10
+      },
+      "spec": "刀刃",
+      "bonus": 35,
+      "gain": "刀刃伤害 +35%，移速 +10%；冲刺后太刀就绪。",
+      "cost": "只能装备刀刃标签；最大生命 −15。",
+      "model": "dancer"
+    },
+    {
+      "id": "sniper",
+      "name": "磁轨猎手",
+      "en": "DEADEYE",
+      "role": "贯穿暴击",
+      "icon": "rail",
+      "color": "#b2deff",
+      "start": 18,
+      "only": "精准",
+      "spec": "精准",
+      "bonus": 40,
+      "slots": 4,
+      "stats": {
+        "haste": -15,
+        "crit": 8,
+        "range": 15
+      },
+      "gain": "精准伤害 +40%，暴击 +8%，射程 +15%。",
+      "cost": "只能装备精准标签；最多 4 槽，攻速 −15%。",
+      "model": "sniper"
+    },
+    {
+      "id": "elemental",
+      "name": "元素使",
+      "en": "TRIUNE",
+      "role": "冰火电融合",
+      "icon": "tesla",
+      "color": "#9af5de",
+      "start": 60,
+      "only": "元素",
+      "spec": "元素",
+      "bonus": 30,
+      "stats": {
+        "maxHp": -10,
+        "armor": -8
+      },
+      "gain": "元素武器伤害 +30%；冰火电允许同时存在。",
+      "cost": "只能装备元素标签；最大生命 −10，护甲 −8。",
+      "model": "elemental"
+    },
+    {
+      "id": "demolition",
+      "name": "爆破专家",
+      "en": "DEMOLITION",
+      "role": "聚怪爆破",
+      "icon": "rocket",
+      "color": "#ffb277",
+      "start": 30,
+      "only": "爆裂",
+      "spec": "爆裂",
+      "bonus": 30,
+      "stats": {
+        "speed": -8,
+        "haste": -12,
+        "maxHp": 10
+      },
+      "gain": "爆裂伤害 +30%，爆炸半径 +20%，生命 +10。",
+      "cost": "只能装备爆裂标签；攻速 −12%，移速 −8%。",
+      "model": "demolition"
+    }
+  ]
+}

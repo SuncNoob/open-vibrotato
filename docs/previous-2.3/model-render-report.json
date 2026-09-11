@@ -1,0 +1,162 @@
+{
+  "allPassed": true,
+  "models": [
+    {
+      "id": "street",
+      "model": "street",
+      "parts": {
+        "box": 10,
+        "sphere": 3,
+        "octa": 0,
+        "cylinder": 2,
+        "cone": 0,
+        "ring": 0
+      },
+      "error": 0
+    },
+    {
+      "id": "lone",
+      "model": "lone",
+      "parts": {
+        "box": 10,
+        "sphere": 2,
+        "octa": 0,
+        "cylinder": 2,
+        "cone": 1,
+        "ring": 0
+      },
+      "error": 0
+    },
+    {
+      "id": "gunner",
+      "model": "gunner",
+      "parts": {
+        "box": 17,
+        "sphere": 2,
+        "octa": 0,
+        "cylinder": 4,
+        "cone": 0,
+        "ring": 0
+      },
+      "error": 0
+    },
+    {
+      "id": "armor",
+      "model": "armor",
+      "parts": {
+        "box": 21,
+        "sphere": 0,
+        "octa": 0,
+        "cylinder": 2,
+        "cone": 0,
+        "ring": 0
+      },
+      "error": 0
+    },
+    {
+      "id": "gambler",
+      "model": "gambler",
+      "parts": {
+        "box": 13,
+        "sphere": 6,
+        "octa": 0,
+        "cylinder": 2,
+        "cone": 0,
+        "ring": 0
+      },
+      "error": 0
+    },
+    {
+      "id": "engineer",
+      "model": "engineer",
+      "parts": {
+        "box": 11,
+        "sphere": 3,
+        "octa": 0,
+        "cylinder": 3,
+        "cone": 0,
+        "ring": 0
+      },
+      "error": 0
+    },
+    {
+      "id": "vampire",
+      "model": "vampire",
+      "parts": {
+        "box": 11,
+        "sphere": 1,
+        "octa": 1,
+        "cylinder": 2,
+        "cone": 4,
+        "ring": 0
+      },
+      "error": 0
+    },
+    {
+      "id": "scavenger",
+      "model": "scavenger",
+      "parts": {
+        "box": 11,
+        "sphere": 3,
+        "octa": 0,
+        "cylinder": 3,
+        "cone": 0,
+        "ring": 0
+      },
+      "error": 0
+    },
+    {
+      "id": "dancer",
+      "model": "dancer",
+      "parts": {
+        "box": 15,
+        "sphere": 2,
+        "octa": 0,
+        "cylinder": 2,
+        "cone": 0,
+        "ring": 0
+      },
+      "error": 0
+    },
+    {
+      "id": "sniper",
+      "model": "sniper",
+      "parts": {
+        "box": 10,
+        "sphere": 3,
+        "octa": 0,
+        "cylinder": 3,
+        "cone": 1,
+        "ring": 0
+      },
+      "error": 0
+    },
+    {
+      "id": "elemental",
+      "model": "elemental",
+      "parts": {
+        "box": 4,
+        "sphere": 1,
+        "octa": 4,
+        "cylinder": 2,
+        "cone": 1,
+        "ring": 0
+      },
+      "error": 0
+    },
+    {
+      "id": "demolition",
+      "model": "demolition",
+      "parts": {
+        "box": 6,
+        "sphere": 0,
+        "octa": 0,
+        "cylinder": 8,
+        "cone": 2,
+        "ring": 0
+      },
+      "error": 0
+    }
+  ],
+  "note": "Actual production drawBody with shared renderer/camera; gray pass only substitutes material."
+}

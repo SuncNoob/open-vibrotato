@@ -1,0 +1,1396 @@
+{
+  "version": "2.3.1",
+  "results": [
+    {
+      "name": "one initial level-I weapon for all 12 characters",
+      "passed": true,
+      "detail": 12
+    },
+    {
+      "name": "six normal slots, at most eight, fixed specialist caps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "character weapon restrictions are enforced by equip",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "duplicates occupy slots until an explicit merge",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mismatched level, model, and terminal merges rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full-slot paid merge is atomic and cannot double-charge",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "paid investment survives fusion, salvage cannot use inflation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "core replacement requires explicit choice; same-name uniqueness",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "item quantity caps and hard-slot characters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock preserves exact offer, level and price across waves",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reroll costs grow within shop and with wave; all-locked costs zero",
+      "passed": true,
+      "detail": [
+        11,
+        26,
+        51,
+        86
+      ]
+    },
+    {
+      "name": "precise matching pity on second unsuccessful weapon refresh",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "targeted material respects existing high level before natural unlock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "guaranteed core offers defer behind locks and never overwrite them",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wave and luck use explicit non-uniform rarity weights",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "catalog integrity: 120 weapons, 20 families, 64 items, 12 cores",
+      "passed": true,
+      "detail": {
+        "negativeItems": 53,
+        "terminals": 6
+      }
+    },
+    {
+      "name": "600 same-family variant comparisons: no all-dimension dominance",
+      "passed": true,
+      "detail": 600
+    },
+    {
+      "name": "damage growth is additive, not repeated global multiplication",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "armor and dodge cap at 60%, negative armor increases damage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "200 level-up draws: three unique options, at least one cost",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "blood threshold, stronger payoff and healing penalty are real",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vampire positive regeneration is locked, negative remains a cost",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "echo: every third blade swing produces two damaging nonrecursive slashes",
+      "passed": true,
+      "detail": {
+        "count": 1,
+        "damage": 122.84999999999998
+      }
+    },
+    {
+      "name": "quantum: per-weapon third shot, two missiles, global rate limit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hive: no free companion core before three engineering weapons",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fusion: three statuses, 240% burst, consumption and target cooldown",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "singularity requires three hits and collapse deals actual delayed damage",
+      "passed": true,
+      "detail": {
+        "count": 1,
+        "damage": 336
+      }
+    },
+    {
+      "name": "vault is capped, uses post-payment balance and preserves locked prices",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "salvage charges only manual pickups and discharges on primary hit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bulwark uses real enemy mitigation; self-harm cannot charge it",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "time core has 8-second build-up, 3-second window, interrupted by damage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "time core slows telegraph and enemy time, not wave clock or movement",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "phase requires three crossed enemies and emits three damaging strikes",
+      "passed": true,
+      "detail": {
+        "count": 1,
+        "damage": 55
+      }
+    },
+    {
+      "name": "parasite rewards close elite kills, not remote kills or normal kills",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "derived core attacks do not lifesteal or recursively trigger cores",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all 120 live weapons deal damage, including directional and deployed families",
+      "passed": true,
+      "detail": {
+        "tested": 120,
+        "minDamage": 57.375
+      }
+    },
+    {
+      "name": "six blades have independent shot counts, targets and real hit records",
+      "passed": true,
+      "detail": {
+        "damage": 2595.591099999998,
+        "shots": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "name": "melee does not damage behind the locked slash direction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "deleting a weapon cleans its active slashes and deployment fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "enemy HP follows the configured superlinear growth curve",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "boss has three telegraph types, second phase and arena hazards",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "charger has a wind-up before movement; shooter keeps distance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "elite loot is guaranteed and pickup is automatic but not auto-installed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "explosive barrels telegraph before hurting player",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wave variations and tiered durations are configured across 20 waves",
+      "passed": true,
+      "detail": {
+        "combatSeconds": 815,
+        "bossWaves": [
+          "10",
+          "20"
+        ]
+      }
+    },
+    {
+      "name": "end-of-wave recovery, interest, bonus and fractional healing prices",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "win unlocks only the next danger level and restart stays single-weapon",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "death log attributes overdrive self-harm, not an unknown enemy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "negative regeneration death has a readable source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "global projectile, particle and field budgets remain bounded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "overkill cannot manufacture lifesteal or negative nested damage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "core-generated elite kills do not trigger parasite; ordinary DOT kills can",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "non-invincible first-wave movement probes, four seeds per character",
+      "passed": true,
+      "detail": {
+        "survived": 48,
+        "total": 48,
+        "minHp": 44
+      }
+    }
+  ],
+  "assertions": 1965,
+  "allPassed": true,
+  "coverage": [
+    {
+      "id": 0,
+      "family": "pulse",
+      "damage": 96
+    },
+    {
+      "id": 1,
+      "family": "pulse",
+      "damage": 105.6
+    },
+    {
+      "id": 2,
+      "family": "pulse",
+      "damage": 95.19999999999999
+    },
+    {
+      "id": 3,
+      "family": "pulse",
+      "damage": 76.8
+    },
+    {
+      "id": 4,
+      "family": "pulse",
+      "damage": 150.4
+    },
+    {
+      "id": 5,
+      "family": "pulse",
+      "damage": 105.6
+    },
+    {
+      "id": 6,
+      "family": "scatter",
+      "damage": 129
+    },
+    {
+      "id": 7,
+      "family": "scatter",
+      "damage": 137.25
+    },
+    {
+      "id": 8,
+      "family": "scatter",
+      "damage": 127.5
+    },
+    {
+      "id": 9,
+      "family": "scatter",
+      "damage": 140
+    },
+    {
+      "id": 10,
+      "family": "scatter",
+      "damage": 212
+    },
+    {
+      "id": 11,
+      "family": "scatter",
+      "damage": 173.8
+    },
+    {
+      "id": 12,
+      "family": "gatling",
+      "damage": 88.96000000000004
+    },
+    {
+      "id": 13,
+      "family": "gatling",
+      "damage": 91.20000000000005
+    },
+    {
+      "id": 14,
+      "family": "gatling",
+      "damage": 87.03999999999998
+    },
+    {
+      "id": 15,
+      "family": "gatling",
+      "damage": 69.12000000000005
+    },
+    {
+      "id": 16,
+      "family": "gatling",
+      "damage": 143.36
+    },
+    {
+      "id": 17,
+      "family": "gatling",
+      "damage": 91.52000000000002
+    },
+    {
+      "id": 18,
+      "family": "rail",
+      "damage": 120
+    },
+    {
+      "id": 19,
+      "family": "rail",
+      "damage": 112.5
+    },
+    {
+      "id": 20,
+      "family": "rail",
+      "damage": 102
+    },
+    {
+      "id": 21,
+      "family": "rail",
+      "damage": 96
+    },
+    {
+      "id": 22,
+      "family": "rail",
+      "damage": 180
+    },
+    {
+      "id": 23,
+      "family": "rail",
+      "damage": 290.40000000000003
+    },
+    {
+      "id": 24,
+      "family": "laser",
+      "damage": 90
+    },
+    {
+      "id": 25,
+      "family": "laser",
+      "damage": 90
+    },
+    {
+      "id": 26,
+      "family": "laser",
+      "damage": 102
+    },
+    {
+      "id": 27,
+      "family": "laser",
+      "damage": 72
+    },
+    {
+      "id": 28,
+      "family": "laser",
+      "damage": 162
+    },
+    {
+      "id": 29,
+      "family": "laser",
+      "damage": 99
+    },
+    {
+      "id": 30,
+      "family": "rocket",
+      "damage": 522
+    },
+    {
+      "id": 31,
+      "family": "rocket",
+      "damage": 539.4
+    },
+    {
+      "id": 32,
+      "family": "rocket",
+      "damage": 542.3000000000001
+    },
+    {
+      "id": 33,
+      "family": "rocket",
+      "damage": 436.1599999999999
+    },
+    {
+      "id": 34,
+      "family": "rocket",
+      "damage": 742.4
+    },
+    {
+      "id": 35,
+      "family": "rocket",
+      "damage": 1684.3200000000006
+    },
+    {
+      "id": 36,
+      "family": "seeker",
+      "damage": 299.2
+    },
+    {
+      "id": 37,
+      "family": "seeker",
+      "damage": 291.7199999999998
+    },
+    {
+      "id": 38,
+      "family": "seeker",
+      "damage": 222.53000000000003
+    },
+    {
+      "id": 39,
+      "family": "seeker",
+      "damage": 245.3439999999999
+    },
+    {
+      "id": 40,
+      "family": "seeker",
+      "damage": 456.2800000000003
+    },
+    {
+      "id": 41,
+      "family": "seeker",
+      "damage": 329.11999999999995
+    },
+    {
+      "id": 42,
+      "family": "plasma",
+      "damage": 541.2
+    },
+    {
+      "id": 43,
+      "family": "plasma",
+      "damage": 495
+    },
+    {
+      "id": 44,
+      "family": "plasma",
+      "damage": 392.7000000000001
+    },
+    {
+      "id": 45,
+      "family": "plasma",
+      "damage": 432.95999999999975
+    },
+    {
+      "id": 46,
+      "family": "plasma",
+      "damage": 805.2
+    },
+    {
+      "id": 47,
+      "family": "plasma",
+      "damage": 609.84
+    },
+    {
+      "id": 48,
+      "family": "tesla",
+      "damage": 192
+    },
+    {
+      "id": 49,
+      "family": "tesla",
+      "damage": 223.2
+    },
+    {
+      "id": 50,
+      "family": "tesla",
+      "damage": 244.80000000000004
+    },
+    {
+      "id": 51,
+      "family": "tesla",
+      "damage": 230.39999999999992
+    },
+    {
+      "id": 52,
+      "family": "tesla",
+      "damage": 336
+    },
+    {
+      "id": 53,
+      "family": "tesla",
+      "damage": 464.6400000000002
+    },
+    {
+      "id": 54,
+      "family": "flame",
+      "damage": 217.1000000000001
+    },
+    {
+      "id": 55,
+      "family": "flame",
+      "damage": 199.57500000000007
+    },
+    {
+      "id": 56,
+      "family": "flame",
+      "damage": 225.5900000000005
+    },
+    {
+      "id": 57,
+      "family": "flame",
+      "damage": 168.87999999999988
+    },
+    {
+      "id": 58,
+      "family": "flame",
+      "damage": 319.6
+    },
+    {
+      "id": 59,
+      "family": "flame",
+      "damage": 218.01999999999992
+    },
+    {
+      "id": 60,
+      "family": "cryo",
+      "damage": 121.5
+    },
+    {
+      "id": 61,
+      "family": "cryo",
+      "damage": 106.3125
+    },
+    {
+      "id": 62,
+      "family": "cryo",
+      "damage": 137.69999999999996
+    },
+    {
+      "id": 63,
+      "family": "cryo",
+      "damage": 110.16000000000004
+    },
+    {
+      "id": 64,
+      "family": "cryo",
+      "damage": 182.25
+    },
+    {
+      "id": 65,
+      "family": "cryo",
+      "damage": 133.64999999999998
+    },
+    {
+      "id": 66,
+      "family": "blade",
+      "damage": 660
+    },
+    {
+      "id": 67,
+      "family": "blade",
+      "damage": 622.5
+    },
+    {
+      "id": 68,
+      "family": "blade",
+      "damage": 561
+    },
+    {
+      "id": 69,
+      "family": "blade",
+      "damage": 865.5999999999999
+    },
+    {
+      "id": 70,
+      "family": "blade",
+      "damage": 1036
+    },
+    {
+      "id": 71,
+      "family": "blade",
+      "damage": 1597.2
+    },
+    {
+      "id": 72,
+      "family": "orbit",
+      "damage": 280
+    },
+    {
+      "id": 73,
+      "family": "orbit",
+      "damage": 240
+    },
+    {
+      "id": 74,
+      "family": "orbit",
+      "damage": 272
+    },
+    {
+      "id": 75,
+      "family": "orbit",
+      "damage": 168
+    },
+    {
+      "id": 76,
+      "family": "orbit",
+      "damage": 440
+    },
+    {
+      "id": 77,
+      "family": "orbit",
+      "damage": 352
+    },
+    {
+      "id": 78,
+      "family": "boomerang",
+      "damage": 204
+    },
+    {
+      "id": 79,
+      "family": "boomerang",
+      "damage": 214.2
+    },
+    {
+      "id": 80,
+      "family": "boomerang",
+      "damage": 254.32
+    },
+    {
+      "id": 81,
+      "family": "boomerang",
+      "damage": 163.19999999999996
+    },
+    {
+      "id": 82,
+      "family": "boomerang",
+      "damage": 319.6
+    },
+    {
+      "id": 83,
+      "family": "boomerang",
+      "damage": 299.20000000000005
+    },
+    {
+      "id": 84,
+      "family": "mine",
+      "damage": 1008
+    },
+    {
+      "id": 85,
+      "family": "mine",
+      "damage": 756
+    },
+    {
+      "id": 86,
+      "family": "mine",
+      "damage": 856.8000000000002
+    },
+    {
+      "id": 87,
+      "family": "mine",
+      "damage": 806.3999999999996
+    },
+    {
+      "id": 88,
+      "family": "mine",
+      "damage": 1512
+    },
+    {
+      "id": 89,
+      "family": "mine",
+      "damage": 1108.8000000000002
+    },
+    {
+      "id": 90,
+      "family": "drone",
+      "damage": 59.5
+    },
+    {
+      "id": 91,
+      "family": "drone",
+      "damage": 57.375
+    },
+    {
+      "id": 92,
+      "family": "drone",
+      "damage": 57.8
+    },
+    {
+      "id": 93,
+      "family": "drone",
+      "damage": 108.79999999999997
+    },
+    {
+      "id": 94,
+      "family": "drone",
+      "damage": 85
+    },
+    {
+      "id": 95,
+      "family": "drone",
+      "damage": 123.42000000000002
+    },
+    {
+      "id": 96,
+      "family": "acid",
+      "damage": 407.69999999999953
+    },
+    {
+      "id": 97,
+      "family": "acid",
+      "damage": 394.2000000000008
+    },
+    {
+      "id": 98,
+      "family": "acid",
+      "damage": 261.62999999999994
+    },
+    {
+      "id": 99,
+      "family": "acid",
+      "damage": 326.1600000000001
+    },
+    {
+      "id": 100,
+      "family": "acid",
+      "damage": 575.0999999999985
+    },
+    {
+      "id": 101,
+      "family": "acid",
+      "damage": 570.24
+    },
+    {
+      "id": 102,
+      "family": "gravity",
+      "damage": 576
+    },
+    {
+      "id": 103,
+      "family": "gravity",
+      "damage": 684
+    },
+    {
+      "id": 104,
+      "family": "gravity",
+      "damage": 979.2000000000011
+    },
+    {
+      "id": 105,
+      "family": "gravity",
+      "damage": 633.5999999999988
+    },
+    {
+      "id": 106,
+      "family": "gravity",
+      "damage": 1040
+    },
+    {
+      "id": 107,
+      "family": "gravity",
+      "damage": 2787.8399999999974
+    },
+    {
+      "id": 108,
+      "family": "storm",
+      "damage": 280
+    },
+    {
+      "id": 109,
+      "family": "storm",
+      "damage": 315
+    },
+    {
+      "id": 110,
+      "family": "storm",
+      "damage": 238
+    },
+    {
+      "id": 111,
+      "family": "storm",
+      "damage": 241.92000000000004
+    },
+    {
+      "id": 112,
+      "family": "storm",
+      "damage": 420
+    },
+    {
+      "id": 113,
+      "family": "storm",
+      "damage": 308.00000000000006
+    },
+    {
+      "id": 114,
+      "family": "nova",
+      "damage": 672
+    },
+    {
+      "id": 115,
+      "family": "nova",
+      "damage": 518.4
+    },
+    {
+      "id": 116,
+      "family": "nova",
+      "damage": 571.2
+    },
+    {
+      "id": 117,
+      "family": "nova",
+      "damage": 537.5999999999999
+    },
+    {
+      "id": 118,
+      "family": "nova",
+      "damage": 1027.2
+    },
+    {
+      "id": 119,
+      "family": "nova",
+      "damage": 781.4399999999998
+    }
+  ],
+  "firstWave": [
+    {
+      "character": "street",
+      "seed": 1,
+      "survived": true,
+      "hp": 80,
+      "minHp": 72,
+      "kills": 15,
+      "credits": 75.25,
+      "level": 2
+    },
+    {
+      "character": "street",
+      "seed": 2,
+      "survived": true,
+      "hp": 86,
+      "minHp": 78,
+      "kills": 13,
+      "credits": 71.89999999999999,
+      "level": 2
+    },
+    {
+      "character": "street",
+      "seed": 3,
+      "survived": true,
+      "hp": 92,
+      "minHp": 84,
+      "kills": 13,
+      "credits": 72.6,
+      "level": 2
+    },
+    {
+      "character": "street",
+      "seed": 4,
+      "survived": true,
+      "hp": 100,
+      "minHp": 92,
+      "kills": 15,
+      "credits": 72.14999999999998,
+      "level": 2
+    },
+    {
+      "character": "lone",
+      "seed": 1,
+      "survived": true,
+      "hp": 100,
+      "minHp": 100,
+      "kills": 15,
+      "credits": 72.14999999999998,
+      "level": 2
+    },
+    {
+      "character": "lone",
+      "seed": 2,
+      "survived": true,
+      "hp": 100,
+      "minHp": 92,
+      "kills": 15,
+      "credits": 71.44999999999999,
+      "level": 2
+    },
+    {
+      "character": "lone",
+      "seed": 3,
+      "survived": true,
+      "hp": 100,
+      "minHp": 100,
+      "kills": 17,
+      "credits": 72.74999999999997,
+      "level": 2
+    },
+    {
+      "character": "lone",
+      "seed": 4,
+      "survived": true,
+      "hp": 100,
+      "minHp": 92,
+      "kills": 14,
+      "credits": 71.14999999999998,
+      "level": 2
+    },
+    {
+      "character": "gunner",
+      "seed": 1,
+      "survived": true,
+      "hp": 100,
+      "minHp": 100,
+      "kills": 17,
+      "credits": 74.44999999999999,
+      "level": 2
+    },
+    {
+      "character": "gunner",
+      "seed": 2,
+      "survived": true,
+      "hp": 100,
+      "minHp": 100,
+      "kills": 14,
+      "credits": 71.49999999999999,
+      "level": 2
+    },
+    {
+      "character": "gunner",
+      "seed": 3,
+      "survived": true,
+      "hp": 100,
+      "minHp": 100,
+      "kills": 14,
+      "credits": 72.54999999999998,
+      "level": 2
+    },
+    {
+      "character": "gunner",
+      "seed": 4,
+      "survived": true,
+      "hp": 86,
+      "minHp": 100,
+      "kills": 17,
+      "credits": 75.85,
+      "level": 2
+    },
+    {
+      "character": "armor",
+      "seed": 1,
+      "survived": true,
+      "hp": 144.97391304347832,
+      "minHp": 132.1739130434783,
+      "kills": 12,
+      "credits": 71.94999999999999,
+      "level": 2
+    },
+    {
+      "character": "armor",
+      "seed": 2,
+      "survived": true,
+      "hp": 124.10434782608696,
+      "minHp": 111.30434782608697,
+      "kills": 14,
+      "credits": 74.94999999999999,
+      "level": 2
+    },
+    {
+      "character": "armor",
+      "seed": 3,
+      "survived": true,
+      "hp": 153.66956521739132,
+      "minHp": 140.8695652173913,
+      "kills": 10,
+      "credits": 69.25,
+      "level": 1
+    },
+    {
+      "character": "armor",
+      "seed": 4,
+      "survived": true,
+      "hp": 139.75652173913045,
+      "minHp": 126.95652173913044,
+      "kills": 12,
+      "credits": 71.94999999999999,
+      "level": 2
+    },
+    {
+      "character": "gambler",
+      "seed": 1,
+      "survived": true,
+      "hp": 80,
+      "minHp": 72,
+      "kills": 15,
+      "credits": 75.25,
+      "level": 2
+    },
+    {
+      "character": "gambler",
+      "seed": 2,
+      "survived": true,
+      "hp": 86,
+      "minHp": 78,
+      "kills": 13,
+      "credits": 71.89999999999999,
+      "level": 2
+    },
+    {
+      "character": "gambler",
+      "seed": 3,
+      "survived": true,
+      "hp": 92,
+      "minHp": 84,
+      "kills": 13,
+      "credits": 72.6,
+      "level": 2
+    },
+    {
+      "character": "gambler",
+      "seed": 4,
+      "survived": true,
+      "hp": 100,
+      "minHp": 92,
+      "kills": 15,
+      "credits": 72.14999999999998,
+      "level": 2
+    },
+    {
+      "character": "engineer",
+      "seed": 1,
+      "survived": true,
+      "hp": 92,
+      "minHp": 84,
+      "kills": 13,
+      "credits": 72.25,
+      "level": 2
+    },
+    {
+      "character": "engineer",
+      "seed": 2,
+      "survived": true,
+      "hp": 94,
+      "minHp": 86,
+      "kills": 13,
+      "credits": 71.89999999999999,
+      "level": 2
+    },
+    {
+      "character": "engineer",
+      "seed": 3,
+      "survived": true,
+      "hp": 100,
+      "minHp": 92,
+      "kills": 13,
+      "credits": 72.25,
+      "level": 2
+    },
+    {
+      "character": "engineer",
+      "seed": 4,
+      "survived": true,
+      "hp": 52,
+      "minHp": 44,
+      "kills": 13,
+      "credits": 72.6,
+      "level": 2
+    },
+    {
+      "character": "vampire",
+      "seed": 1,
+      "survived": true,
+      "hp": 60,
+      "minHp": 52,
+      "kills": 13,
+      "credits": 71.89999999999999,
+      "level": 2
+    },
+    {
+      "character": "vampire",
+      "seed": 2,
+      "survived": true,
+      "hp": 60,
+      "minHp": 60,
+      "kills": 15,
+      "credits": 74.19999999999999,
+      "level": 2
+    },
+    {
+      "character": "vampire",
+      "seed": 3,
+      "survived": true,
+      "hp": 60,
+      "minHp": 54,
+      "kills": 15,
+      "credits": 75.25,
+      "level": 2
+    },
+    {
+      "character": "vampire",
+      "seed": 4,
+      "survived": true,
+      "hp": 59.76,
+      "minHp": 54,
+      "kills": 15,
+      "credits": 75.25,
+      "level": 2
+    },
+    {
+      "character": "scavenger",
+      "seed": 1,
+      "survived": true,
+      "hp": 86,
+      "minHp": 78,
+      "kills": 15,
+      "credits": 42.045,
+      "level": 2
+    },
+    {
+      "character": "scavenger",
+      "seed": 2,
+      "survived": true,
+      "hp": 86.47249999999957,
+      "minHp": 78,
+      "kills": 13,
+      "credits": 39.44500000000001,
+      "level": 2
+    },
+    {
+      "character": "scavenger",
+      "seed": 3,
+      "survived": true,
+      "hp": 92,
+      "minHp": 84,
+      "kills": 13,
+      "credits": 39.44500000000001,
+      "level": 2
+    },
+    {
+      "character": "scavenger",
+      "seed": 4,
+      "survived": true,
+      "hp": 100,
+      "minHp": 92,
+      "kills": 15,
+      "credits": 41.135000000000005,
+      "level": 2
+    },
+    {
+      "character": "dancer",
+      "seed": 1,
+      "survived": true,
+      "hp": 83.8,
+      "minHp": 77,
+      "kills": 13,
+      "credits": 71.89999999999999,
+      "level": 2
+    },
+    {
+      "character": "dancer",
+      "seed": 2,
+      "survived": true,
+      "hp": 85,
+      "minHp": 85,
+      "kills": 14,
+      "credits": 72.54999999999998,
+      "level": 2
+    },
+    {
+      "character": "dancer",
+      "seed": 3,
+      "survived": true,
+      "hp": 85,
+      "minHp": 79,
+      "kills": 15,
+      "credits": 74.89999999999999,
+      "level": 2
+    },
+    {
+      "character": "dancer",
+      "seed": 4,
+      "survived": true,
+      "hp": 85,
+      "minHp": 79,
+      "kills": 15,
+      "credits": 75.6,
+      "level": 2
+    },
+    {
+      "character": "sniper",
+      "seed": 1,
+      "survived": true,
+      "hp": 100,
+      "minHp": 94,
+      "kills": 15,
+      "credits": 72.14999999999998,
+      "level": 2
+    },
+    {
+      "character": "sniper",
+      "seed": 2,
+      "survived": true,
+      "hp": 86,
+      "minHp": 94,
+      "kills": 13,
+      "credits": 70.14999999999998,
+      "level": 2
+    },
+    {
+      "character": "sniper",
+      "seed": 3,
+      "survived": true,
+      "hp": 100,
+      "minHp": 100,
+      "kills": 15,
+      "credits": 71.44999999999999,
+      "level": 2
+    },
+    {
+      "character": "sniper",
+      "seed": 4,
+      "survived": true,
+      "hp": 100,
+      "minHp": 100,
+      "kills": 14,
+      "credits": 71.85,
+      "level": 2
+    },
+    {
+      "character": "elemental",
+      "seed": 1,
+      "survived": true,
+      "hp": 90,
+      "minHp": 90,
+      "kills": 15,
+      "credits": 74.54999999999998,
+      "level": 2
+    },
+    {
+      "character": "elemental",
+      "seed": 2,
+      "survived": true,
+      "hp": 90,
+      "minHp": 90,
+      "kills": 12,
+      "credits": 70.19999999999999,
+      "level": 2
+    },
+    {
+      "character": "elemental",
+      "seed": 3,
+      "survived": true,
+      "hp": 90,
+      "minHp": 90,
+      "kills": 14,
+      "credits": 72.54999999999998,
+      "level": 2
+    },
+    {
+      "character": "elemental",
+      "seed": 4,
+      "survived": true,
+      "hp": 90,
+      "minHp": 83.55555555555556,
+      "kills": 15,
+      "credits": 74.54999999999998,
+      "level": 2
+    },
+    {
+      "character": "demolition",
+      "seed": 1,
+      "survived": true,
+      "hp": 84.8,
+      "minHp": 76,
+      "kills": 14,
+      "credits": 74.25,
+      "level": 2
+    },
+    {
+      "character": "demolition",
+      "seed": 2,
+      "survived": true,
+      "hp": 74.8,
+      "minHp": 66,
+      "kills": 14,
+      "credits": 74.6,
+      "level": 2
+    },
+    {
+      "character": "demolition",
+      "seed": 3,
+      "survived": true,
+      "hp": 88.8,
+      "minHp": 80,
+      "kills": 13,
+      "credits": 72.94999999999999,
+      "level": 2
+    },
+    {
+      "character": "demolition",
+      "seed": 4,
+      "survived": true,
+      "hp": 80.8,
+      "minHp": 72,
+      "kills": 11,
+      "credits": 70.6,
+      "level": 2
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "version": "2.3.1",
+  "results": [
+    {
+      "name": "preserve original renderer, builder, weapons, items and core parameters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1 identical blades have evenly spaced permanent floating lanes",
+      "passed": true,
+      "detail": [
+        {
+          "a": 0.18,
+          "index": 0,
+          "n": 1,
+          "r": 0.98,
+          "y": 0.94
+        }
+      ]
+    },
+    {
+      "name": "2 identical blades have evenly spaced permanent floating lanes",
+      "passed": true,
+      "detail": [
+        {
+          "a": 0.18,
+          "index": 0,
+          "n": 2,
+          "r": 0.98,
+          "y": 0.94
+        },
+        {
+          "a": 3.3215926535897933,
+          "index": 1,
+          "n": 2,
+          "r": 0.98,
+          "y": 1.2999999999999998
+        }
+      ]
+    },
+    {
+      "name": "4 identical blades have evenly spaced permanent floating lanes",
+      "passed": true,
+      "detail": [
+        {
+          "a": 0.18,
+          "index": 0,
+          "n": 4,
+          "r": 0.98,
+          "y": 0.94
+        },
+        {
+          "a": 1.7507963267948965,
+          "index": 1,
+          "n": 4,
+          "r": 0.98,
+          "y": 1.2999999999999998
+        },
+        {
+          "a": 3.3215926535897933,
+          "index": 2,
+          "n": 4,
+          "r": 0.98,
+          "y": 1.66
+        },
+        {
+          "a": 4.892388980384689,
+          "index": 3,
+          "n": 4,
+          "r": 0.98,
+          "y": 0.94
+        }
+      ]
+    },
+    {
+      "name": "6 identical blades have evenly spaced permanent floating lanes",
+      "passed": true,
+      "detail": [
+        {
+          "a": 0.18,
+          "index": 0,
+          "n": 6,
+          "r": 0.98,
+          "y": 0.94
+        },
+        {
+          "a": 1.2271975511965976,
+          "index": 1,
+          "n": 6,
+          "r": 0.98,
+          "y": 1.2999999999999998
+        },
+        {
+          "a": 2.2743951023931954,
+          "index": 2,
+          "n": 6,
+          "r": 0.98,
+          "y": 1.66
+        },
+        {
+          "a": 3.3215926535897933,
+          "index": 3,
+          "n": 6,
+          "r": 0.98,
+          "y": 0.94
+        },
+        {
+          "a": 4.36879020478639,
+          "index": 4,
+          "n": 6,
+          "r": 0.98,
+          "y": 1.2999999999999998
+        },
+        {
+          "a": 5.4159877559829885,
+          "index": 5,
+          "n": 6,
+          "r": 0.98,
+          "y": 1.66
+        }
+      ]
+    },
+    {
+      "name": "8 identical blades have evenly spaced permanent floating lanes",
+      "passed": true,
+      "detail": [
+        {
+          "a": 0.18,
+          "index": 0,
+          "n": 8,
+          "r": 0.98,
+          "y": 0.94
+        },
+        {
+          "a": 0.9653981633974482,
+          "index": 1,
+          "n": 8,
+          "r": 0.98,
+          "y": 1.2999999999999998
+        },
+        {
+          "a": 1.7507963267948965,
+          "index": 2,
+          "n": 8,
+          "r": 0.98,
+          "y": 1.66
+        },
+        {
+          "a": 2.536194490192345,
+          "index": 3,
+          "n": 8,
+          "r": 0.98,
+          "y": 0.94
+        },
+        {
+          "a": 3.3215926535897933,
+          "index": 4,
+          "n": 8,
+          "r": 0.98,
+          "y": 1.2999999999999998
+        },
+        {
+          "a": 4.106990816987241,
+          "index": 5,
+          "n": 8,
+          "r": 0.98,
+          "y": 1.66
+        },
+        {
+          "a": 4.892388980384689,
+          "index": 6,
+          "n": 8,
+          "r": 0.98,
+          "y": 0.94
+        },
+        {
+          "a": 5.677787143782138,
+          "index": 7,
+          "n": 8,
+          "r": 0.98,
+          "y": 1.2999999999999998
+        }
+      ]
+    },
+    {
+      "name": "two blades remain opposite in a mixed six-weapon loadout",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "idle 3D blade angles align to their stable home directions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sector targeting distributes surrounding enemies over all six directions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same boss focus retains six unique origins and separated height layers",
+      "passed": true,
+      "detail": [
+        {
+          "uid": 2,
+          "phase": "strike",
+          "angle": -0.08596802128666833,
+          "home": 0.18,
+          "x": 0.17544898195730768,
+          "z": 0.964166818932359,
+          "height": 0.94,
+          "tipX": -0.11190904057618017,
+          "tipZ": 4.298543516894684,
+          "color": 15178751
+        },
+        {
+          "uid": 3,
+          "phase": "strike",
+          "angle": -0.33275427665315427,
+          "home": 1.2271975511965976,
+          "x": 0.9227174496601076,
+          "z": 0.33014013402303355,
+          "height": 1.2999999999999998,
+          "tipX": -0.44143504861964833,
+          "tipZ": 4.277281274109778,
+          "color": 6744047
+        },
+        {
+          "uid": 4,
+          "phase": "strike",
+          "angle": -0.20280405392037756,
+          "home": 2.2743951023931954,
+          "x": 0.7472684677028001,
+          "z": -0.6340266849093256,
+          "height": 1.66,
+          "tipX": -0.2656315279814123,
+          "tipZ": 4.2917874937305855,
+          "color": 16741557
+        },
+        {
+          "uid": 5,
+          "phase": "strike",
+          "angle": 0.044229863646393586,
+          "home": 3.3215926535897933,
+          "x": -0.1754489819573077,
+          "z": -0.964166818932359,
+          "height": 0.94,
+          "tipX": 0.05751931935600768,
+          "tipZ": 4.2996152767312585,
+          "color": 10134527
+        },
+        {
+          "uid": 6,
+          "phase": "strike",
+          "angle": 0.27029955962315205,
+          "home": 4.36879020478639,
+          "x": -0.9227174496601075,
+          "z": -0.3301401340230341,
+          "height": 1.2999999999999998,
+          "tipX": 0.356112000651139,
+          "tipZ": 4.285228610353506,
+          "color": 10220242
+        },
+        {
+          "uid": 7,
+          "phase": "strike",
+          "angle": 0.3059246061998563,
+          "home": 5.4159877559829885,
+          "x": -0.7472684677028002,
+          "z": 0.6340266849093255,
+          "height": 1.66,
+          "tipX": 0.40456729526861424,
+          "tipZ": 4.2809257531051665,
+          "color": 14925311
+        }
+      ]
+    },
+    {
+      "name": "odd and even slots alternate swing handedness",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "recovery interpolates back to each home instead of leaving stacked blades",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visible blade tips stay in the original player-centered attack range",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "each blade hits at most once per swing and never beyond its damage range",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a barrel is not charged for damage every frame of a single swing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "six blades produce independent per-owner partial ribbons",
+      "passed": true,
+      "detail": [
+        4,
+        5,
+        6,
+        7,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "maximum haste does not starve any of eight blade slots",
+      "passed": true,
+      "detail": [
+        7,
+        7,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "name": "removing or merging a blade cleans its ribbons and queued core echoes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new wave clears transient blade effects and re-staggers all weapons",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "echo retains two real nonrecursive attacks carrying the owner socket",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "legendary blades stay orange, ordinary duplicates have slot accents",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "FX on/off cannot change combat, economy, or seeded shop RNG",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile and desktop ribbon budgets remain bounded at maximum haste",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "render-only enhancement uses no gameplay or global random calls",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "assertions": 4021,
+  "allPassed": true
+}

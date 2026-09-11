@@ -1,0 +1,34 @@
+{
+  "version": "2.3.0",
+  "title": "NEON SPUD COREBREAK",
+  "sourceArchive": "NeonSpud_Source.zip",
+  "sourceArchiveSha256": "c215e47b8d5c18d8a49e45ef4d220c8a12363642321c69074835fe5f375c36d3",
+  "htmlSha256": "553ea8eb48d059433b235a84360840b6e09333724c47b6acd2a755edb61473b1",
+  "originalPreserved": {
+    "build.py": "a21021b3f4eb279d6f4034493a6349fc0e98db272a5a86b29a11346405ce6209",
+    "src/engine.js": "df8908df55ddbd337dec286a543e8c5d0d7170a104b00b080d791d8671609d81"
+  },
+  "files": {
+    "src/engine.js": "df8908df55ddbd337dec286a543e8c5d0d7170a104b00b080d791d8671609d81",
+    "src/weapons.js": "d1822005be1dbc298b98cc36032ed1ee1635068b433708821810672b30f8bc2b",
+    "src/game.js": "236c216361b68fbce5db891efd6f298304dd073278096e35561aa6a029e8bfc4",
+    "src/ui.js": "f89c396143f19e455c95f0f714020d383fbcac558da9899f52667caae5685b46",
+    "src/style.css": "e8e89d1de169a4b402b234cc6482de6c2922b886251c6d664f2027ca9e72e821",
+    "src/index.html": "9d8f16d3be909e63923b0d74f1ddbe08c171d3c5da9f51be5047f095b1fa3af1",
+    "build.py": "a21021b3f4eb279d6f4034493a6349fc0e98db272a5a86b29a11346405ce6209",
+    "weapon-catalog.json": "897696d2bd95d631f01226b350916c34b8ef87b6dde5edd888e28ecd0c4e8ca5",
+    "item-catalog.json": "8465d376c05b6b93c6a7d1551f1a4e4f0cc9116dfecc07961c4409e5194ea1ec",
+    "README.md": "98d54ec0a3c80e6aa104ac91ba1308e4dd07fceb5b7af750435bdd6b4ea2481c",
+    "CHANGELOG.md": "006d0f3aa6354cf6e700e837441573b0b1ca07d2493d7e6a1538359fc2f3bfc7",
+    "VALIDATION.md": "c27a464c898b47571cf132c801f9cb990428ab69f2ef01abbdb44f8e0a737258",
+    "tests/verify.py": "4574c735ce30950f0fbb8dd5853e7ac1783a7fc9d19a6b6bc9e7828688235ed0",
+    "tests/sim_checks.js": "c0ef58bb2850c85ff51e101c69837f4e67f4ed8acbf4e9948d06a71086a3f73c"
+  },
+  "tests": {
+    "logicGroups": 53,
+    "logicAssertions": 1965,
+    "buildBrowserGroups": 26,
+    "renderedModels": 12
+  },
+  "provenance": "Reintegrated from the actual uploaded original project; historical 2.2 downloads were not available."
+}

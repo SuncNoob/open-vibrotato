@@ -1,0 +1,233 @@
+{
+  "version": "2.3.1",
+  "bundleSHA256": "00868ddb99d60be43fc413567e213e637cd76bbf0fa5c7ee12971cbd3034a6a6",
+  "results": [
+    {
+      "name": "native fullscreen enters and exits from actual top-right button",
+      "passed": true,
+      "detail": {
+        "native": true,
+        "target": "document.documentElement"
+      }
+    },
+    {
+      "name": "F shortcut and externally initiated fullscreen exit synchronize UI",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual WebGL idle captures show unique two/four/six/eight blade sockets",
+      "passed": true,
+      "detail": {
+        "counts": [
+          2,
+          4,
+          6,
+          8
+        ]
+      }
+    },
+    {
+      "name": "six independently animated blades and core echoes render without WebGL errors",
+      "passed": true,
+      "detail": {
+        "trailOwners": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "frames": 42,
+        "lastFrame": {
+          "blades": [
+            {
+              "uid": 2,
+              "phase": "idle",
+              "angle": 0.18,
+              "home": 0.18,
+              "x": 0.17544898195730768,
+              "z": 0.964166818932359,
+              "height": 0.94,
+              "tipX": 0.6087005496478022,
+              "tipZ": 3.345068555479613,
+              "color": 15178751
+            },
+            {
+              "uid": 3,
+              "phase": "idle",
+              "angle": 1.2271975511965976,
+              "home": 1.2271975511965976,
+              "x": 0.9227174496601077,
+              "z": 0.33014013402303355,
+              "height": 1.2999999999999998,
+              "tipX": 3.2012646212697615,
+              "tipZ": 1.1453841384472592,
+              "color": 6744047
+            },
+            {
+              "uid": 4,
+              "phase": "idle",
+              "angle": 2.2743951023931954,
+              "home": 2.2743951023931954,
+              "x": 0.7472684677028001,
+              "z": -0.6340266849093256,
+              "height": 1.66,
+              "tipX": 2.5925640716219593,
+              "tipZ": -2.199684417032354,
+              "color": 16741557
+            },
+            {
+              "uid": 5,
+              "phase": "idle",
+              "angle": 3.3215926535897933,
+              "home": 3.3215926535897933,
+              "x": -0.1754489819573077,
+              "z": -0.964166818932359,
+              "height": 0.94,
+              "tipX": -0.6087005496478023,
+              "tipZ": -3.345068555479613,
+              "color": 10134527
+            },
+            {
+              "uid": 6,
+              "phase": "idle",
+              "angle": 4.36879020478639,
+              "home": 4.36879020478639,
+              "x": -0.9227174496601075,
+              "z": -0.3301401340230341,
+              "height": 1.2999999999999998,
+              "tipX": -3.2012646212697606,
+              "tipZ": -1.1453841384472612,
+              "color": 10220242
+            },
+            {
+              "uid": 7,
+              "phase": "idle",
+              "angle": 5.4159877559829885,
+              "home": 5.4159877559829885,
+              "x": -0.7472684677028002,
+              "z": 0.6340266849093255,
+              "height": 1.66,
+              "tipX": -2.59256407162196,
+              "tipZ": 2.1996844170323535,
+              "color": 14925311
+            }
+          ],
+          "trails": [],
+          "shots": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            2
+          ]
+        },
+        "echo": {
+          "count": 1,
+          "damage": 0
+        }
+      }
+    },
+    {
+      "name": "legendary blade uses orange edge and ordinary blade keeps its slot accent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fullscreen button stays clickable above shop and modal without closing them",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fullscreen rejection is caught and does not fake state or leave stuck movement",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "enhanced/simple weapon effects can be toggled from settings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile portrait/landscape HUD, modal checkout, and real touch fullscreen fit",
+      "passed": true,
+      "detail": [
+        {
+          "viewport": [
+            320,
+            740
+          ],
+          "button": {
+            "x": 224,
+            "y": 10,
+            "width": 84,
+            "height": 46
+          },
+          "modalFooter": {
+            "x": 11,
+            "y": 652,
+            "width": 298,
+            "height": 75
+          }
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "button": {
+            "x": 294,
+            "y": 10,
+            "width": 84,
+            "height": 46
+          },
+          "modalFooter": {
+            "x": 11,
+            "y": 756,
+            "width": 368,
+            "height": 75
+          }
+        },
+        {
+          "viewport": [
+            932,
+            430
+          ],
+          "button": {
+            "x": 874,
+            "y": 10,
+            "width": 46,
+            "height": 46
+          },
+          "modalFooter": {
+            "x": 142,
+            "y": 348,
+            "width": 648,
+            "height": 69
+          }
+        }
+      ]
+    },
+    {
+      "name": "actual local file URL starts offline and native fullscreen works",
+      "passed": null,
+      "status": "blocked",
+      "reason": "Browser policy blocks file:// navigation; exact bundle is verified in an offline set_content context instead."
+    },
+    {
+      "name": "no unhandled runtime errors or external resource requests",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "errors": [],
+  "networkRequests": [],
+  "passed": 10,
+  "blocked": 1,
+  "total": 11,
+  "allPassed": true,
+  "captureNote": "Production WebGL renderer. Six-blade labeled test loadouts, deterministic stationary targets, manually stepped simulation. Not an FPS benchmark or starting equipment."
+}
